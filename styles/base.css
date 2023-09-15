@@ -1,37 +1,94 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Quicksand:wght@300&family=Raleway:wght@300&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Open+Sans:ital,wght@1,300&family=Quicksand:wght@500&family=Raleway:wght@500&family=Righteous&display=swap');
 
 :root {
     /* Page Colors */
-    --primary-color: rgb(12, 88, 239);
+    --primary-color: rgb(32, 70, 147);
     --secondary-color: rgb(88, 85, 85); 
 
     /* Page Fonts */
-    --heading-font: "Roboto-Slab";
-    --paragraph-font: "Raleway", "Quicksands", "Open-Sans";
+    --heading-font: "Black Ops One", "Righteous";
+    --paragraph-font: "Quicksand", "Raleway", "Open-Sans";
 }
 
 body {
     margin: 0;
     display: grid;
-    grid-template-columns: 1fr 50% 1fr;
+    grid-template-columns: 1fr 52% 1fr;
+    
 }
 
 header {
     grid-column: 2 /3;
     background-color: var(--primary-color);
+}
+
+header h1 {
     color: azure;
+    font-family: var(--heading-font);
+
 }
 
 nav {
-    color: azure;
-    background-color: black;
     grid-column: 2 /3;
+    background-color: black; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav a {
+    color: azure;
+    text-decoration: none;
+    font-size: 23px;
+    margin: 15px 0 15px 0;
+    font-family: var(--paragraph-font);
+    
 }
 
 main {
     grid-column: 2 /3;
+    margin: 0 20px 0 20px;
+    text-align: center;
+    
 }
 
+main h2 {
+    border-bottom: 1.5px solid black;
+}
+
+.card {
+    margin: 10px 0 10px 0;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin: 0;
+    background-color: var(--primary-color);
+    min-height: 30px;
+    font-family: var(--paragraph-font);
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 5px;
+}
+
+main ul {
+    margin-bottom: 0;
+    list-style-type:decimal-leading-zero;
+    font-size: 20px;
+    text-align: left;
+    font-family: var(--paragraph-font); 
+}
+
+main ul li {
+    padding-bottom: 10px;
+}
+
+
 footer {
+    display: flex;
+    flex-direction: column;
     grid-column: 2 /3;
+    background-color: var(--primary-color);
+    color: azure;
 }
