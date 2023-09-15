@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Quicksand:wght@300&family=Raleway:wght@300&family=Roboto+Slab&display=swap');
+
+:root {
+    /* Page Colors */
+    --primary-color: rgb(12, 88, 239);
+    --secondary-color: rgb(88, 85, 85); 
+
+    /* Page Fonts */
+    --heading-font: "Roboto-Slab";
+    --paragraph-font: "Raleway", "Quicksands", "Open-Sans";
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 50% 1fr;
+}
+
+header {
+    grid-column: 2 /3;
+    background-color: var(--primary-color);
+    color: azure;
+}
+
+nav {
+    color: azure;
+    background-color: black;
+    grid-column: 2 /3;
+}
+
+main {
+    grid-column: 2 /3;
+}
+
+footer {
+    grid-column: 2 /3;
+}
