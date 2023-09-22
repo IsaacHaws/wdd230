@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital@1&family=Lora&family=Raleway&display=swap');
+
+:root {
+    /* Page Colors */
+    --primary-color: rgb(0, 40, 86);
+    --secondary-color: rgb(61, 63, 78);
+    --card-color: rgb(179, 179, 179); 
+
+    /* Page Fonts */
+    --heading-font: "Raleway";
+    --paragraph-font: "Lora", "Cabin";
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 50% 1fr;
+
+}
+
+header {
+    grid-column: 2/3;
+    text-align: center;
+    font-family: var(--heading-font);
+    background-color: var(--primary-color);
+    color: white;
+}
+
+main {
+    grid-column: 2/3;
+    margin: 0 15px 0 15px;
+}
+
+section h1 {
+    margin: 0;
+    background-color: var(--secondary-color);
+    color: white;
+    font-family: var(--heading-font);
+    border-radius: 10px 10px 0 0;
+    padding: 10px 0 10px 10px;
+}
+
+.card1, .card2, .card3 {
+    margin: 20px 0 20px 0;
+    background-color: var(--card-color);
+    border-radius: 20px 20px 0 0;
+}
+
+section p {
+    padding: 5px 0 5px 0;
+    font-family: var(--paragraph-font);
+
+}
+
+img {
+    max-width: 95%;
+}
+
+footer {
+    grid-column: 2/3;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+}
