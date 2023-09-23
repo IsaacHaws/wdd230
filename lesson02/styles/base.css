@@ -34,6 +34,13 @@ main {
     margin: 0 15px 0 15px;
 }
 
+section p {
+    margin: 10px 10px 10px 10px;
+    font-family: var(--paragraph-font);
+    font-size: 20px;
+    line-height: 32px;
+}
+
 .cardHeader {
     margin: 0;
     background-color: var(--secondary-color);
@@ -68,12 +75,6 @@ section a {
     font-family: "Lora";
 }
 
-section p {
-    margin: 10px 10px 10px 10px;
-    font-family: var(--paragraph-font);
-    font-size: 20px;
-    line-height: 32px;
-}
 
 footer {
     grid-column: 2/3;
