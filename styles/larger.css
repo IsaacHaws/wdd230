@@ -4,6 +4,10 @@
         grid-template-columns: 1fr 80% 1fr;
     }
 
+    header h1 {
+        font-size: 40px;
+    }
+
     nav {
         display: flex;
         flex-direction: row;
@@ -25,7 +29,7 @@
     main h2 {
         display: block;
         text-align: left;
-        margin: 10px 0 10px 0;
+        margin: 0 0 10px 0;
     }
 
     .card {
@@ -33,13 +37,8 @@
         max-width: 300px;
         margin: 10px 0 25px 0;
     }
-    /*
-    .card p {
-        padding: 0 60px 0 60px;
-    }*/
+
     .card ul {
         max-width: 390px;
     }
-
-    
 }

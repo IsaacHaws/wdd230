@@ -29,12 +29,13 @@ header {
 img {
     padding: 15px;
     max-height: 150px;
+    height: 80%;
 }
 
 header h1 {
     color: azure;
     font-family: var(--heading-font);
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 100;
     padding-left: 15px;
 
@@ -114,13 +115,20 @@ footer {
     background-color: rgb(87, 87, 87);
     color: azure;
     text-align: center;
-    /* font-size: 20px; */
     font-family: var(--paragraph-font); 
     min-height: 130px;
 }
 
 footer p {
     margin-top: 20px;
+}
+
+header, nav, footer {
+    min-width: 320px;
+}
+
+main {
+    min-width: 283px;
 }
 
 #lastModifided {
