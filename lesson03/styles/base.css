@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono&family=Inclusive+Sans&family=Martian+Mono:wght@300&family=Mooli&family=Roboto+Slab:wght@500&display=swap');
+
+:root {
+    /* Page Colors */
+    --primary-color: #333652;
+    --secondary-color: #90ADC6;
+    --accent1-color: #FAD02C;
+    --accent2-color: #E9EAEC; 
+
+    /* Page Fonts */
+    --heading-font: "Azeret-Mono", "Roboto-Slab";
+    --paragraph-font: "Inclusive-Sans", "Mooli", "Martian-Mono";
+}
