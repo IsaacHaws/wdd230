@@ -19,8 +19,9 @@
     <header>
         <img src="images/rsz_1rsz_1myphoto2.jpg" alt="Pic of Me">
         <h1>Isaac G. Haws</h1>
+        <button id="menu"></button>
     </header>
-    <nav>
+    <nav id="navigation">
         <a href="#">Home</a>
         <a href="chamber/siteplan.html">Site Plan</a>
         <a href="chamber/">Chamber</a>
@@ -34,7 +35,7 @@
             <ul>
                 <li><a href="lesson01/holygrail.html">Holygrail</a> | <a href="https://codepen.io/Critter25/pen/jOXwLgr">Codepen</a></li>
                 <li><a href="lesson01/media-query.html">Media Query</a> | <a href="lesson02/design-principles.html">Design Principles Document</a></li>
-                <li><a href="lesson03/images/Lesson 3 learning activity pic.png">CSS Combinators</a> | <a href="https://codepen.io/Critter25/pen/yLGKPgy">CSS Psuedo Elements</a> | <a href="https://codepen.io/Critter25/pen/eYbMeQv">Responsive "Hamburger" Menu</a></li>
+                <li><a href="lesson03/images/Lesson-3-learning-activity-pic.png">CSS Combinators</a> | <a href="https://codepen.io/Critter25/pen/yLGKPgy">CSS Psuedo Elements</a> | <a href="https://codepen.io/Critter25/pen/eYbMeQv">Responsive "Hamburger" Menu</a></li>
                 <li><a></a></li>
                 <li><a></a></li>
                 <li><a></a></li>
@@ -50,11 +51,15 @@
             <p class="weather">&#127774; 85&#8457; Sunny</p>
             <p class="pageVisits">Page Visits: <span class="visitNum">15</span></p>
         </section>
+        <section id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27375.63844655425!2d-97.5438186635492!3d30.943826724693785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1696004507982!5m2!1sen!2sus" title="Salado Map" width="700" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
     </main>
     <footer>
         <p>&copy;<span id="currentYear"></span> Isaac Haws USA</p>
         <p id="lastModifided"></p>
     </footer>
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/menu.js"></script>
 </body>
 </html>

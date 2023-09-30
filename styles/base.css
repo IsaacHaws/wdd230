@@ -11,10 +11,8 @@
 }
 
 body {
-    margin: 0;
     display: grid;
     grid-template-columns: 1fr 52% 1fr;
-    
 }
 
 header {
@@ -22,7 +20,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    grid-column: 2 /3;
+    grid-column: 2/3;
     background-color: var(--primary-color);
 }
 
@@ -38,11 +36,32 @@ header h1 {
     font-size: 30px;
     font-weight: 100;
     padding-left: 15px;
+}
 
+#menu {
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    height: 30px;
+    margin: 5px;
+    background-color: black;
+    color: white;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+.open a {
+    display: flex;
 }
 
 nav {
-    grid-column: 2 /3;
+    grid-column: 2/3;
     background-color: black; 
     display: flex;
     align-items: center;
@@ -50,19 +69,23 @@ nav {
 }
 
 nav a {
+    display: none;
     color: azure;
     text-decoration: none;
     font-size: 23px;
     margin: 10px 0 10px 0;
     font-family: var(--paragraph-font);
-    
+}
+
+nav a:hover {
+    color: black;
+    background-color: rgb(66, 66, 66);
 }
 
 main {
     grid-column: 2/3;
     margin: 0 20px 0 20px;
     text-align: center;
-    
 }
 
 main h2 {
@@ -70,7 +93,7 @@ main h2 {
     font-weight: 100;
     font-size: 30px;
     border-bottom: 1.5px solid black;
-    padding-top: 20px;
+    padding-top: 5px;
 }
 
 .card {
@@ -107,11 +130,21 @@ main ul li {
     padding-bottom: 10px;
 }
 
+#map {
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    margin: 0 20px 30px 20px;
+}
+
+#map iframe {
+    width: 300px;
+}
 
 footer {
     display: flex;
     flex-direction: column;
-    grid-column: 2 /3;
+    grid-column: 2/3;
     background-color: rgb(87, 87, 87);
     color: azure;
     text-align: center;
@@ -125,10 +158,6 @@ footer p {
 
 header, nav, footer {
     min-width: 320px;
-}
-
-main {
-    min-width: 283px;
 }
 
 #lastModifided {
