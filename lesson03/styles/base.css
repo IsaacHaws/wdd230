@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono&family=Inclusive+Sans&family=Martian+Mono:wght@300&family=Mooli&family=Roboto+Slab:wght@500&display=swap');
 
+/* Small View */
+/* https://wireframe.cc/hJ3FUE */
+
+
+/* Large View */
 /* https://wireframe.cc/Xu7j0f */
+
 
 :root {
     /* Page Colors */
@@ -144,6 +150,19 @@ article p {
 .wireframes {
     grid-column: 2/3;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wireframes h2 {
+    display: block;
+}
+
+.wireframes img {
+    width: 50%;
+    height: 50%;
+    margin: 20px;
 }
 
 footer {
