@@ -10,7 +10,7 @@
     <meta property="og:image" content="https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,g_xy_center,h_459,q_75,w_1908,x_2956,y_3001/v1/clients/austin/Salado_Springs_Courtesy_of_Stagecoach_Inn_58bacaca-6231-42bf-ae76-775de9c80342.jpg">
     <meta property="og:url" content="https://isaachaws.github.io/wdd230/chamber/index.html">
     <title>Salado's Chamber of Commerce</title>
-    <link rel="icon" href="../favicon.ico">
+    <link rel="icon" href="texas-favicon.ico">
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -18,26 +18,71 @@
 </head>
 <body>
     <header>
-        <img src="images/map_of_salado_tx.jpg" width="85" height="70" alt="Map of Texas with Salado Marked">
-        <nav id="navigation">
-            <a href="index.html">Home</a>
-            <a href="#">Discover</a>
-            <a href="#">Directory</a>
-            <a href="#">Join</a>
-        </nav>
+        <img src="images/map_of_salado_tx.jpg" width="60%" alt="Map of Texas with Salado Marked">
+        <button id="menuButton"></button>
     </header>
-
+    <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="#">Discover</a>
+        <a href="#">Directory</a>
+        <a href="#">Join</a>
+    </nav>
     <main>
-
+        <div class="heroImg">
+            <img src="images/salado-hero-img.jpg" alt="Hero Pic">
+            <div class="centerText">Welcome to Salado's Chamber of Commerce</div>
+        </div>
+        <a id="join" href="#">Join Us</a>
+        <section class="events">
+            <h2 class="heading">Upcoming Events</h2>
+            <div class="eventCard">
+                <h3 class="heading">Ribbon Cutting</h3>
+                <img src="images/ribbon-cutting.jpg" alt="Ribbon Cutting">
+                <p>When: Oct 8<br><br>Where: example</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum suscipit, sed non fugit atque maxime, numquam consequuntur facilis quas minima a perferendis eius sapiente omnis repudiandae fugiat. Debitis, laudantium natus.</p>
+            </div>
+            <div class="eventCard">
+                <h3 class="heading">Drive-In Movie Night</h3>
+                <img src="images/drive-in-movie.jpg" alt="Drive-In Movie">
+                <p>When: Oct 8<br><br>Where: example</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus id reprehenderit inventore impedit illo omnis eligendi aliquid itaque expedita, delect</p>
+            </div>
+        </section>
+        <section class="spotlights">
+            <h2 class="heading">Business Spotlights</h2>
+            <div class="spotlightCard">
+                <h3>Brookshire Brothers</h3>
+                <img src="images/brookshire-brothers-spotlight.png" alt="Brookshire Brothers">
+            </div>
+            <div class="spotlightCard">
+                <h3>Ace Hardware</h3>
+                <img src="images/ace-hardware-spotlight.jpg" alt="Ace Hardware">
+            </div>
+        </section>
         <section id="weather">
+            <h2 class="heading">Weather</h2>
             <a class="weatherwidget-io" href="https://forecast7.com/en/30d95n97d54/salado/?unit=us" data-label_1="SALADO" data-font="Roboto Slab" data-days="5" data-theme="original" width="300px">SALADO</a>
             <script>
                 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
             </script>
         </section>
+        <section class="employeeSpotlight">
+            <h2 class="heading">Employee Spotlight</h2>
+            <h3>Thomas G Gibbs</h3>
+            <img src="images/employee-img.png" alt="employee">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, a quasi minima autem explicabo error laudantium fuga eligendi aperiam labor</p>
+        </section>
     </main>
     <footer>
+        <img src="images/map_of_salado_tx.jpg" width="80px" heigth="85px" alt="map_of_salado_tx">
+        <div class="dividingLine"></div>
         <p>Isaac Haws - WDD-230  <span id=lastModified>10/4/23 10:30:55</span></p>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="#">Discover</a>
+            <a href="#">Directory</a>
+            <a href="#">Join</a>
+        </div>
     </footer>
 </body>
 </html>

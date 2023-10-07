@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono&family=Inclusive+Sans&family=Martian+Mono:wght@300&family=Mooli&family=Roboto+Slab:wght@500&display=swap');
+
+:root {
+    /* Page Colors */
+    --primary-color: #333652;
+    --secondary-color: #90ADC6;
+    --accent1-color: #f12626;
+    --accent2-color: #FAD02C;
+    --accent3-color: #E9EAEC; 
+    
+
+    /* Page Fonts */
+    --heading-font: "Azeret Mono", "Roboto Slab";
+    --paragraph-font: "Inclusive Sans", "Mooli", "Martian Mono";
+}
+
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 80% 1fr;
+    background-color: gainsboro;
+}
+
+header {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color);
+   
+}
+
+header img {
+    padding-top: 30px;
+}
+
+#menuButton {
+    align-self: flex-end;
+    height: 30px;
+    margin: 5px;
+    background-color: black;
+    color: white;
+}
+
+#menuButton::before {
+    content: "☰";
+}
+
+#menuButton.open::after {
+    content: "X"
+}
+
+.navigation {
+    display: flex;
+    grid-column: 2/3;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+
+.navigation a {
+    color: black;
+    font-size: 23px;
+    font-family: var(--heading-font);
+    text-decoration: none;
+    padding: 20px 120px 20px 120px;
+}
+
+.navigation a:hover {
+    background-color: var(--primary-color);
+}
+
+.navigation a:active {
+    text-decoration: underline;
+}
+
+
+main {
+    grid-column: 2/3;
+    min-width: 260px;
+}
+
+.heroImg {
+    position: relative;
+    text-align: center;
+    font-family: var(--heading-font);
+    margin: 20px 0 20px 0;
+}
+
+.heroImg img {
+    width: 100%;
+}
+
+.centerText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+#join {
+    border: black solid 5px;
+    background-color: var(--secondary-color);
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: var(--paragraph-font);
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--accent3-color);
+    margin: 0 20px 0 20px ;
+}
+
+.events h2, .spotlights h2, #weather h2, .employeeSpotlight h2 {
+    margin-top: 0;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    align-self: normal;
+}
+
+.eventCard {
+    width: 90%;
+    border: black solid 2px;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    margin: 20px;
+}
+
+.eventCard h3 {
+    color: white;
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 10px;
+}
+
+.events .eventCard:nth-child(2), .events .eventCard:nth-child(3) {
+    font-family: var(--paragraph-font);
+    text-align: center;
+}
+
+.events .eventCard:nth-child(2) img {
+    float: left;
+}
+
+.events .eventCard:nth-child(3) img {
+    width: 100%;
+}
+
+.events .eventCard:nth-child(2) p, .events .eventCard:nth-child(3) p {
+    line-height: 25px;
+}
+
+.spotlights {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--accent3-color);
+}
+
+.spotlightCard {
+    max-width: 350px;
+}
+
+.spotlightCard h3 {
+    text-align: center;
+    font-family: var(--paragraph-font);
+}
+
+.spotlightCard img {
+    width: 100%;
+}
+
+
+#weather h2 {
+    margin-bottom: 0;
+}
+
+.employeeSpotlight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--accent3-color);
+    text-align: center;
+}
+
+.employeeSpotlight h3 {
+    font-size: 25px;
+    font-family: var(--heading-font);
+}
+
+.employeeSpotlight p {
+    font-size: 20px;
+    font-family: var(--paragraph-font);
+    line-height: 28px;
+    margin: 5px 5px 0 5px;
+}
+
+.events, .spotlights, #weather, .employeeSpotlight {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    grid-column: 2/3;
+    color: aliceblue;
+    background-color: var(--primary-color);
+    font-family: var(--paragraph-font);
+    border: black solid 2px;
+}
+
+footer img {
+    padding: 10px;
+}
+
+.dividingLine {
+    width: 20px;
+    height: 100%;
+    margin: 0 1px 0 10px;
+    background-color: var(--accent1-color);
+}
+
+footer p {
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    display: none;
+}
+
+.heading {
+    text-align: center;
+    font-size: 25px;
+    font-family: var(--heading-font);
+}
