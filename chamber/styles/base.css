@@ -46,11 +46,13 @@ header img {
     content: "☰";
 }
 
-#menuButton.open::after {
-    content: "X"
+#menuButton.open::before {
+    content: "❌";
 }
 
-.navigation {
+
+
+#navigation {
     display: flex;
     grid-column: 2/3;
     flex-direction: column;
@@ -58,7 +60,8 @@ header img {
     background-color: var(--secondary-color);
 }
 
-.navigation a {
+#navigation a {
+    display: none;
     color: black;
     font-size: 23px;
     font-family: var(--heading-font);
@@ -66,18 +69,17 @@ header img {
     padding: 20px 120px 20px 120px;
 }
 
-.navigation a:hover {
+#navigation a:hover {
     background-color: var(--primary-color);
 }
 
-.navigation a:active {
-    text-decoration: underline;
+.open a {
+   display: flex!important;
 }
-
 
 main {
     grid-column: 2/3;
-    min-width: 260px;
+    min-width: 430px;
 }
 
 .heroImg {
@@ -89,6 +91,7 @@ main {
 
 .heroImg img {
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .centerText {
@@ -101,14 +104,16 @@ main {
 }
 
 #join {
-    border: black solid 5px;
-    background-color: var(--secondary-color);
+    display: flex;
     color: black;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-family: var(--paragraph-font);
-    font-size: 20px;
+    background-color: var(--secondary-color);
+    border: black solid 5px;
     margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: var(--paragraph-font);
+    text-decoration: none;
+    justify-content: center;
 }
 
 .events {
