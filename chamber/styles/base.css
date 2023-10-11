@@ -17,8 +17,12 @@
 
 body {
     display: grid;
-    grid-template-columns: 1fr 80% 1fr;
+    grid-template-columns: 1fr 70% 1fr;
     background-color: gainsboro;
+}
+
+header, nav, footer {
+    min-width: 400px;
 }
 
 header {
@@ -27,7 +31,6 @@ header {
     flex-direction: column;
     align-items: center;
     background-color: var(--primary-color);
-   
 }
 
 header img {
@@ -51,8 +54,6 @@ header img {
     content: "❌";
 }
 
-
-
 #navigation {
     display: flex;
     grid-column: 2/3;
@@ -64,10 +65,10 @@ header img {
 #navigation a {
     display: none;
     color: black;
-    font-size: 23px;
+    font-size: 20px;
     font-family: var(--heading-font);
     text-decoration: none;
-    padding: 20px 120px 20px 120px;
+    padding: 15px 120px;
 }
 
 #navigation a:hover {
@@ -79,8 +80,10 @@ header img {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
     grid-column: 2/3;
-    min-width: 430px;
+    min-width: 380px;
 }
 
 .heroImg {
@@ -109,7 +112,6 @@ main {
     color: black;
     background-color: var(--secondary-color);
     border: black solid 5px;
-    margin: 20px 0;
     padding: 10px 20px;
     font-size: 20px;
     font-family: var(--paragraph-font);
@@ -123,7 +125,7 @@ main {
     align-items: center;
     border-radius: 10px;
     background-color: var(--accent3-color);
-    margin: 0 20px 0 20px ;
+    margin: 0 10px;
 }
 
 .events h2, .spotlights h2, #weather h2, .employeeSpotlight h2 {
@@ -149,9 +151,16 @@ main {
     padding: 10px;
 }
 
-.events .eventCard:nth-child(2), .events .eventCard:nth-child(3) {
+.events .eventCard:nth-child(2) {
     font-family: var(--paragraph-font);
     text-align: center;
+    margin-right: 10px;
+}
+
+.events .eventCard:nth-child(3) {
+    font-family: var(--paragraph-font);
+    text-align: center;
+    margin-left: 10px;
 }
 
 .events .eventCard:nth-child(2) img {
@@ -185,8 +194,9 @@ main {
 
 .spotlightCard img {
     width: 100%;
+    border: burlywood solid 2px;
+    border-radius: 5px;
 }
-
 
 #weather h2 {
     margin-bottom: 0;
@@ -204,13 +214,14 @@ main {
 .employeeSpotlight h3 {
     font-size: 25px;
     font-family: var(--heading-font);
+    margin: 10px;
 }
 
 .employeeSpotlight p {
-    font-size: 20px;
+    font-size: 15px;
     font-family: var(--paragraph-font);
     line-height: 28px;
-    margin: 5px 5px 0 5px;
+    margin: 5px 10px;
 }
 
 .events, .spotlights, #weather, .employeeSpotlight {
@@ -241,9 +252,9 @@ footer img {
     background-color: var(--accent1-color);
 }
 
-footer p {
+.footerInfo {
     text-align: center;
-    padding: 10px;
+    margin: 0 10px;
 }
 
 footer a {
