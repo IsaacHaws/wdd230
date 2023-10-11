@@ -1,0 +1,93 @@
+ 
+ @media screen and (min-width: 670px) {
+
+    body {
+        grid-template-columns: 1fr 80% 1fr;
+    }
+
+    header img {
+        max-width: 80px;
+        padding: 20px;
+    }
+
+    #menuButton {
+        display: none;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .heroImg {
+        grid-column: 1/4;
+    }
+
+    .centerText {
+        font-size: 2.5rem;
+        width: 70%;
+    }
+
+    #join {
+        grid-column: 1/4;
+    }
+
+    .events, .spotlights {
+        grid-column: 1/4;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .events h2, .spotlights h2 {
+        grid-column: 1/3;
+        justify-items: normal;
+    }
+
+    .eventCard {
+        min-width: 210px;
+        min-height: 720px;
+        line-height: 50px;
+    }
+
+    .eventCard:nth-child(2) {
+        grid-column: 1/2;
+    }
+
+    .eventCard:nth-child(3) {
+        grid-column: 2/3;
+    }
+
+    .events .eventCard:nth-child(2) img {
+        float: none;
+    }
+
+    .spotlights .spotlightCard {
+        margin: 10px;
+    }
+
+    #weather {
+        grid-column: 1/2;
+    }
+
+    .employeeSpotlight {
+        grid-column: 2/4;
+        margin: 10px;
+
+    }
+
+    footer {
+        margin-top: 20px;
+        align-items: center;
+    }
+
+    footer a:nth-child(1) {
+        display: flex;
+        color: azure;
+        font-size: 20px;
+        padding: 0 100%;
+    }
+
+    .footerInfo {
+        max-width: 210px;
+    }
+ }
