@@ -1,5 +1,5 @@
  
- @media screen and (min-width: 670px) {
+ @media screen and (min-width: 800px) {
 
     body {
         grid-template-columns: 1fr 80% 1fr;
@@ -12,6 +12,41 @@
 
     #menuButton {
         display: none;
+    }
+
+    #navigation {
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: row;
+        margin: 0 10px;
+        background-color: initial;
+        position: relative;
+        top: -5rem;
+        justify-content: space-evenly;
+    }
+
+    #navigation a {
+        display: flex;
+        color: azure;
+        font-size: 20px;
+        padding: 15px 0;
+    }
+
+    #navigation a:nth-child(1), #navigation a:nth-child(2) {
+        padding: 15px 30px;
+        position: relative;
+        right: 40px;
+    }
+
+    #navigation a:nth-child(3), #navigation a:nth-child(4) {
+        padding: 15px 30px;
+        position: relative;
+        left: 40px;
+    }
+
+    #navigation a:hover {
+        background-color: white;
+        color: black;
     }
 
     main {
@@ -36,6 +71,7 @@
         grid-column: 1/4;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        justify-items: center;
     }
 
     .events h2, .spotlights h2 {
@@ -47,6 +83,14 @@
         min-width: 210px;
         min-height: 720px;
         line-height: 50px;
+    }
+
+    .eventCard h3 {
+        font-size: 22px;
+    }
+
+    .eventCard p {
+        line-height: 34px;
     }
 
     .eventCard:nth-child(2) {
@@ -80,11 +124,17 @@
         align-items: center;
     }
 
-    footer a:nth-child(1) {
+    #navigationLinks {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    #navigationLinks a {
         display: flex;
         color: azure;
         font-size: 20px;
-        padding: 0 100%;
     }
 
     .footerInfo {

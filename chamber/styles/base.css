@@ -21,6 +21,15 @@ body {
     background-color: gainsboro;
 }
 
+#darkview {
+    position: sticky;
+    top: 10px;
+    left: 1300px;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+}
+
 header, nav, footer {
     min-width: 400px;
 }
@@ -171,7 +180,7 @@ main {
     width: 100%;
 }
 
-.events .eventCard:nth-child(2) p, .events .eventCard:nth-child(3) p {
+.eventCard p {
     line-height: 25px;
 }
 
@@ -220,8 +229,8 @@ main {
 .employeeSpotlight p {
     font-size: 15px;
     font-family: var(--paragraph-font);
-    line-height: 28px;
-    margin: 5px 10px;
+    line-height: 25px;
+    margin: 15px 15px;
 }
 
 .events, .spotlights, #weather, .employeeSpotlight {
@@ -265,4 +274,5 @@ footer a {
     text-align: center;
     font-size: 25px;
     font-family: var(--heading-font);
+    justify-self: normal;
 }
