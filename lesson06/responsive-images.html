@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive Images Learning Activity">
+    <meta name="author" content="Isaac G. Haws">
+    <title>Responsive Images Learning Activity</title>
+    <link rel="icon" href="../favicon.ico">
+    <link href="styles/responsive-images.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+                <img src="images/hero-large.webp" alt="Mesa, Arizona Temple" width="1500" height="750">
+            </picture>
+        </div>
+    </main>
+</body>
+</html>
