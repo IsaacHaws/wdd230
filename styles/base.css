@@ -24,7 +24,7 @@ header {
     background-color: var(--primary-color);
 }
 
-img {
+header img {
     padding: 15px;
     max-height: 150px;
     height: 80%;
@@ -86,6 +86,7 @@ main {
     grid-column: 2/3;
     margin: 0 20px 0 20px;
     text-align: center;
+    min-width: 287px;
 }
 
 main h2 {
@@ -94,6 +95,33 @@ main h2 {
     font-size: 30px;
     border-bottom: 1.5px solid black;
     padding-top: 5px;
+}
+
+.templeImg {
+    grid-column: 1/3;
+    position: relative;
+}
+
+.templeImg img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+.templeLabel {
+    position: absolute;
+    bottom: 5px;
+    width: 110px;
+    border-radius: 0 20px 0 0;
+}
+
+.templeLabel p {
+    color: #fff;
+    background-color: var(--primary-color);
+    padding: 10px 0 10px 0;
+    font-family: "Raleway";
+    font-size: 12px;
+    margin: 0;
 }
 
 .card {
@@ -108,8 +136,7 @@ main h2 {
     min-height: 30px;
     font-family: var(--paragraph-font);
     text-align: center;
-    padding-top: 8px;
-    padding-bottom: 5px;
+    padding: 8px 0 5px 0;
     border-radius: 8px 8px 0 0;
     color: azure;
 }

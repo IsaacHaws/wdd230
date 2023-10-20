@@ -17,7 +17,7 @@
 </head>
 <body>
     <header>
-        <img src="images/rsz_1rsz_1myphoto2.jpg" alt="Pic of Me">
+        <img src="images/rsz_1rsz_1myphoto2.webp" alt="Pic of Me">
         <h1>Isaac G. Haws</h1>
         <button id="menu"></button>
     </header>
@@ -29,6 +29,16 @@
         <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a>
     </nav>
     <main>
+        <div class="templeImg">
+            <picture>
+                <source srcset="lesson06/images/hero-medium.webp" media="(max-width: 400px)"> 
+                <source srcset="lesson06/images/hero-large.webp" media="(max-width: 960px)"> 
+                <img src="lesson06/images/mesa_arizona_temple.webp" alt="Mesa, Arizona Temple" width="1500" height="750">
+            </picture>
+            <div class="templeLabel">
+                <p>Mesa, Arizona</p>
+            </div>
+        </div>
         <h2>WDD 230: Web Frontend Development</h2>
         <section class="card">
             <h3>Learning Activtys</h3>
