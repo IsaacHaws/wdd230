@@ -43,6 +43,12 @@ darkButton.addEventListener("click", () => {
             heading[i].style.color = "#000";
         }
         
+        heading[1].style.background = "#333652";
+        heading[1].style.color = "#fff";
+
+        heading[2].style.background = "#333652";
+        heading[2].style.color = "#fff";
+        
         darkButton.textContent = "🕶️";
     }
 })

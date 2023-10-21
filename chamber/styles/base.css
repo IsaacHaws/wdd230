@@ -211,6 +211,36 @@ main {
     margin-bottom: 0;
 }
 
+.windChillBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    font-family: "Roboto Slab";
+    text-align: center;
+    background-color: #1f567c;
+    border-top: #000000 solid 5px;
+}
+
+.windChillBox h3 {
+    grid-column: 1/3;
+    margin: 0;
+    padding: 20px 10px;
+    font-weight: 100;
+}
+
+.windChillBox div {
+    grid-column: 1/2;
+}
+
+.temp, .windSpeed {
+    line-height: 40px;
+}
+
+.windChillInfo {
+    font-size: 20px;
+    line-height: 40px;
+}
+
 .employeeSpotlight {
     display: flex;
     flex-direction: column;

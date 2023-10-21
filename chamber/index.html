@@ -19,7 +19,7 @@
 <body>
     <div id="darkview">🕶️</div>
     <header>
-        <img src="images/map_of_salado_tx.jpg" alt="Map of Texas with Salado Marked">
+        <img src="images/map_of_salado_tx.webp" alt="Map of Texas with Salado Marked">
         <button id="menuButton"></button>
     </header>
     <nav id="navigation">
@@ -29,16 +29,23 @@
         <a href="#">Join</a>
     </nav>
     <main>
-        <div class="heroImg">
+        <!-- <div class="heroImg">
             <img src="images/salado-hero-img.webp" alt="Hero Pic">
             <h1 class="centerText">Welcome to Salado's Chamber of Commerce</h1>
+        </div> -->
+        <div class="heroImg">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 480px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 800px)">
+                <img src="images/hero-large.webp" alt="Hero Image">
+            </picture>
         </div>
         <a id="join" href="#">Join Us</a>
         <section class="events">
             <h2 class="heading">Upcoming Events</h2>
             <div class="eventCard">
                 <h3 class="heading">Ribbon Cutting</h3>
-                <img src="images/ribbon-cutting.jpg" alt="Ribbon Cutting">
+                <img src="images/ribbon-cutting.webp" alt="Ribbon Cutting">
                 <p>When: Oct 8<br><br>Where: example</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum suscipit, sed non fugit atque maxime, numquam consequuntur facilis quas minima a perferendis eius sapiente omnis repudiandae fugiat. Debitis, laudantium natus.</p>
             </div>
@@ -53,11 +60,11 @@
             <h2 class="heading">Business Spotlights</h2>
             <div class="spotlightCard">
                 <h3>Brookshire Brothers</h3>
-                <img src="images/brookshire-brothers-spotlight.png" alt="Brookshire Brothers">
+                <img src="images/brookshire-brothers-spotlight.webp" alt="Brookshire Brothers">
             </div>
             <div class="spotlightCard">
                 <h3>Ace Hardware</h3>
-                <img src="images/ace-hardware-spotlight.jpg" alt="Ace Hardware">
+                <img src="images/ace-hardware-spotlight.webp" alt="Ace Hardware">
             </div>
         </section>
         <section id="weather">
@@ -66,16 +73,24 @@
             <script>
                 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
             </script>
+            <div class="windChillBox">
+                <h3>Wind Chill</h3>
+                <div>
+                    <p class="temp"></p>
+                    <p class="windSpeed"></p>
+                </div>
+                <p class="windChillInfo"></p>
+            </div> 
         </section>
         <section class="employeeSpotlight">
             <h2 class="heading">Employee Spotlight</h2>
             <h3>Thomas G Gibbs</h3>
-            <img src="images/employee-img.png" alt="employee">
+            <img src="images/employee-img.webp" alt="employee">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, a quasi minima autem explicabo error laudantium fuga eligendi aperiam labor</p>
         </section>
     </main>
     <footer>
-        <img src="images/map_of_salado_tx.jpg" alt="map_of_salado_tx">
+        <img src="images/map_of_salado_tx.webp" alt="map_of_salado_tx">
         <div class="dividingLine"></div>
         <div class="footerInfo">
             <p>Isaac Haws - WDD-230</p>
@@ -90,5 +105,6 @@
     </footer>
     <script src="scripts/main.js"></script>
     <script src="scripts/darkview.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>
