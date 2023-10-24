@@ -1,0 +1,43 @@
+
+h1 {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 0 auto;
+}
+
+main img {
+    width: 100%;
+    margin-bottom: 200px;
+    background: #000;
+    animation: fade 15s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: aliceblue;
+    background-color: black;
+}
+
+footer p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 10px 0;
+}
+
+
