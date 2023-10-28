@@ -141,4 +141,37 @@
     .footerInfo {
         max-width: 210px;
     }
+
+
+    /*Discover Page styles*/
+
+    .discoverHeader {
+        grid-column: 1/4;
+    }
+
+    .headerLine {
+        grid-column: 1/4;
+    }
+
+    aside {
+        grid-column: 1/2;
+        margin-right: 20px;
+    }
+
+    .calender iframe {
+        height: 800px;
+    }
+
+    .images {
+        grid-column: 2/4;
+        justify-content: space-between;
+    }
+
+    .image1, .image2, .image3, .image4 {
+        margin-bottom: 20px;
+    }
+
+    .image1 img:hover, .image2 img:hover, .image3 img:hover, .image4 img:hover, .image5 img:hover {
+        border: var(--secondary-color) solid 15px;
+    }
  }
