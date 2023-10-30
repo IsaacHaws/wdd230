@@ -1,0 +1,45 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    margin: 200px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+table {
+    border: black solid 1px;
+    border-spacing: 0;
+}
+
+caption {
+    caption-side: bottom;
+    padding-top: 10px;
+}
+
+thead tr:first-child th {
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+
+thead tr:nth-child(2) th {
+    background-color: grey;
+    padding: 10px 15px;
+}
+
+thead tr:nth-child(2) th:first-child {
+    background-color: black;
+}
+
+tbody tr th {
+    padding: 10px 20px;
+}
+
+tbody tr td {
+    text-align: center;
+    border-left: black solid 1px;
+}
+
+tbody tr:nth-child(2) {
+    background-color: rgb(219, 219, 219);
+}
