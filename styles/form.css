@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Kanit&family=PT+Sans&family=Roboto+Slab:wght@400;500&display=swap');
+
+:root {
+    --header-font: "Kanit", "Fira Sans";
+    --para-font: "PT Sans", "Roboto Slab";
+    --fieldset-border: grey;
+    --input-border: rgb(87, 87, 87);
+}
+
+main {
+    display: block;
+    text-align: left;
+    margin: 0;
+}
+
+main h1 {
+    font-family: var(--header-font);
+    font-size: 25px;
+    margin: 20px 0 0 0;
+}
+
+form fieldset {
+    margin: 20px 0;
+    border: var(--fieldset-border) solid 2px;
+    border-radius: 10px;
+}
+
+form legend {
+    padding: 0 5px;
+    font-family: var(--para-font);
+}
+
+form fieldset:first-child label {
+    display: block;
+    margin: 15px 35px 0 0;
+    font-size: 13px;
+    font-family: var(--para-font);
+    min-width: 200px;
+}
+
+form fieldset:first-child p {
+    display: none;
+    margin: 5px 10px;
+    padding: 5px;
+    background-color: red;
+    font-family: var(--para-font);
+    font-size: 15px;
+    border: black solid 2px;
+}
+
+form fieldset:nth-child(2) label {
+    display: block;
+    font-size: 13px;
+    margin: 15px 35px 0 0;
+    min-width: 200px;
+}
+
+form fieldset:nth-child(2) div {
+    font-size: 30px;
+    font-family: var(--header-font);
+    margin: 10px 0 0 30px
+}
+
+form label input {
+    display: block;
+    font-size: 1rem;
+    font-family: initial;
+    border: var(--input-border) solid 1.5px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    padding: .75rem;
+    width: 100%;
+    max-width: 720px;
+}
+
+form label input:required {
+    border-left: red solid 5px;
+}
+
+form label input:required:valid {
+    border-left: green solid 5px;
+}
+
+#submitBnt {
+    font-size: 1rem;
+    font-family: var(--header-font);
+    background-color: gainsboro;
+    border: black solid 3px;
+    border-radius: 10px;
+    margin: 6px auto 30px auto;
+    padding: .75rem;
+}
+
+
+/* Form Conformation Page Styles */
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 80% 1fr;
+}
+
+
+header {
+    grid-column: 2/3;
+    background-color: rgb(32, 70, 147);
+    min-width: 200px;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+nav {
+    grid-column: 2/3;
+}
+
+main {
+    grid-column: 2/3;
+}
+
+footer {
+    grid-column: 2/3;
+}
