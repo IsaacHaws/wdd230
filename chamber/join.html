@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Isaac Haws">
+    <meta name="description" content="Salado Chamber of Commerce Join Page">
+    <meta property="og:title" content="Salado's Chamber of Commerce Join Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,g_xy_center,h_459,q_75,w_1908,x_2956,y_3001/v1/clients/austin/Salado_Springs_Courtesy_of_Stagecoach_Inn_58bacaca-6231-42bf-ae76-775de9c80342.jpg">
+    <meta property="og:url" content="https://isaachaws.github.io/wdd230/chamber/index.html">
+    <title>Join Page</title>
+    <link rel="icon" href="texas-favicon.ico">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <div id="darkview">🕶️</div>
+    <header>
+        <img src="images/map_of_salado_tx.webp" alt="Map of Texas with Salado Marked">
+        <button id="menuButton"></button>
+    </header>
+
+    <nav id="navigation">
+        <a href="index.html">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="#">Directory</a>
+        <a href="#">Join</a>
+    </nav>
+
+    <main>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label>First Name* <input id="firstName" type="text" name="fname" required></label>
+                <label>Last Name* <input id="lastName" type="text" name="lname" required></label>
+                
+                <!-- Add pattern attribute to job position -->
+                <label>Job Position* <input id="jobPosition" type="text" name="position" required></label>
+                <label>Email* <input id="email" type="email" name="email" placeholder="someone12@gmail.com" required></label>
+                <label>Mobile Phone Number* <input id="phoneNum" type="tel" name="phoneNumber" required></label>
+                
+            </fieldset>
+            <fieldset>
+                <legend>Business Information</legend>
+                <label>Business Name* <input id="businessName" type="text" name="businessName" required></label>
+                
+                <div>Membership Level</div>
+                <label><input id="membershipLevel" type="radio" name="membership" value="Non-Profit Organization">Non-Profit Organization</label>
+                <label><input id="membershipLevel" type="radio" name="membership" value="Bronze Membership">Bronze Membership</label>
+                <label><input id="membershipLevel" type="radio" name="membership" value="Silver Membership">Silver Membership</label>
+                <label><input id="membershipLevel" type="radio" name="membership" value="Gold Membership">Gold Membership</label>
+
+                <label>Business Information <textarea id="businessInfo" name="businessInfo" rows="5" cols="50"></textarea></label>
+                <label>Timestamp <input id="timestamp" type="hidden" name="timestamp"></label>
+            </fieldset>
+            <button id="applyBnt" type="submit">Apply for Membership</button>
+        </form>
+
+        <section class="benifits">
+
+        </section>
+    </main>
+
+    <footer>
+        <img src="images/map_of_salado_tx.webp" alt="map_of_salado_tx">
+        <div class="dividingLine"></div>
+        <div class="footerInfo">
+            <p>Isaac Haws - WDD-230</p>
+            <p id="lastModified"></p>
+        </div>
+        <div id="navigationLinks">
+            <a href="index.html">Home</a>
+            <a href="#">Discover</a>
+            <a href="#">Directory</a>
+            <a href="#">Join</a>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/darkview.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+</html>
