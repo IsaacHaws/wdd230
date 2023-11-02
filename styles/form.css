@@ -97,27 +97,66 @@ form label input:required:valid {
 body {
     display: grid;
     grid-template-columns: 1fr 80% 1fr;
+    background-color: gainsboro;
 }
-
 
 header {
     grid-column: 2/3;
     background-color: rgb(32, 70, 147);
     min-width: 200px;
+    text-align: center;
+    font-family: var(--header-font);
+    min-width: 420px;
 }
 
 header h1 {
-    font-size: 30px;
-}
-
-nav {
-    grid-column: 2/3;
+    margin: 20px 20px;
 }
 
 main {
     grid-column: 2/3;
+    min-height: 400px;
+    min-width: 340px;
+    text-align: center;
+    font-size: 20px;
+    background-color: white;
+    font-family: var(--para-font);
+    padding: 20px 40px;
+    line-height: 30px;
+}
+
+main a {
+    color: black;
 }
 
 footer {
     grid-column: 2/3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    background-color: rgb(88, 85, 85);
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    min-width: 420px;
+}
+
+footer div a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+footer div {
+    margin: 10px 20px;
+}
+
+
+@media screen and (min-width: 570px) {
+    footer {
+        justify-content: space-around;
+        text-align: initial;
+    }
 }
