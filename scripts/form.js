@@ -19,9 +19,9 @@ pass2.addEventListener("focusout", checkPassword)
 function checkPassword() {
     if (pass1.value !== pass2.value) {
         errorMsg.textContent = "Passwords Do Not Match!";
-        errorMsg.style.visibility = "show";
+        errorMsg.style.display = "block";
+        pass1.value = "";
         pass2.value = "";
-        pass2.style.background = "#90ADC6";
-        pass2.focus();
+        pass1.focus();
     }
 }
