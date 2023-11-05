@@ -462,3 +462,152 @@ aside {
     font-weight: 600;
     margin: 10px 0; 
 }
+
+
+
+/* Join Page Styles */
+
+.title {
+    grid-column: 1/2;
+    text-align: center;
+    font-size: 30px;
+    font-family: var(--heading-font);
+    margin: 20px 20px 0 20px;
+}
+
+.titleLine {
+    grid-column: 1/2;
+    background-color: #000000;
+    height: 7px;
+    width: 90%;
+    border-radius: 10px 10px 0 0;
+    align-self: center;
+    margin-top: 5px;
+}
+
+main {
+    margin: 0 20px;
+}
+
+fieldset {
+    border: var(--secondary-color) solid 2px;
+    border-radius: 10px;
+    margin-top: 20px;
+    min-width: 310px;
+}
+
+fieldset legend {
+    padding: 0 8px;
+    font-family: var(--paragraph-font);
+    font-size: 20px;
+}
+
+fieldset label {
+    display: block;
+    font-size: 14px;
+    font-family: var(--paragraph-font);
+    line-height: 30px;
+    margin: 20px 40px 0 0;
+}
+
+fieldset label input {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: black solid 1px;
+    border-radius: 10px;
+}
+
+form label input:required {
+    border-left: red solid 6px;
+}
+
+form label input:required:valid {
+    border-left: green solid 6px;
+}
+
+#businessInfo {
+    border: var(--secondary-color) solid 3px;
+    border-radius: 10px;
+    width: 107%;
+    max-width: 107%;
+    max-height: 300px;
+    min-width: 330px;
+    min-height: 160px;
+}
+
+fieldset:nth-child(3) label {
+    font-size: 15px;
+}
+
+fieldset:nth-child(3) label input {
+    display: initial;
+    width: initial;
+}
+
+#timeStamp {
+    display: block;
+}
+
+#applyBnt {
+    font-size: 1rem;
+    font-family: var(--heading-font);
+    width: 66%;
+    text-align: center;
+    margin: 20px auto;
+    padding: 15px 0;
+    border-radius: 10px;
+    color: white;
+    background-color: #000000;
+}
+
+#lineBreak {
+    display: none;
+    width: 5px;
+    height: 100%;
+    background-color: var(--accent1-color);
+    margin: 0 10px;
+}  
+
+table {
+    display: none;
+}
+
+
+/* Thankyou Page Styles */
+
+#conformHeader {
+    grid-column: 2/3;
+    text-align: center;
+    color: white;
+    font-family: var(--heading-font);
+    width: 100%;
+    min-width: 410px;
+}
+
+#conformHeader h1 {
+    margin: 30px 25px;
+}
+
+#conformMain {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0 15px;
+    text-align: center;
+    min-width: 380px;
+}
+
+#conformMain p {
+    font-size: 20px;
+    font-family: var(--paragraph-font);
+    margin: 30px 0;
+}
+
+#conformFooter {
+    margin-top: 0;
+    min-width: 410px;
+}

@@ -139,4 +139,13 @@
     .footerInfo {
         max-width: 210px;
     }
+
+
+
+    /* Join Page Styles */
+
+    main {
+        justify-items: center;
+        grid-template-columns: 40% 200px 40%;
+    }
  }

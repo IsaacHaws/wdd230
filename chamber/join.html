@@ -32,14 +32,14 @@
     </nav>
 
     <main>
+        <div class="title">Membership Application</div>
+        <div class="titleLine"></div>
         <form method="get" action="thankyou.html">
             <fieldset>
                 <legend>Applicant Information</legend>
                 <label>First Name* <input id="firstName" type="text" name="fname" required></label>
                 <label>Last Name* <input id="lastName" type="text" name="lname" required></label>
-                
-                <!-- Add pattern attribute to job position -->
-                <label>Job Position* <input id="jobPosition" type="text" name="position" required></label>
+                <label>Job Position* <input id="jobPosition" type="text" name="position" pattern="^[a-zA-Z\-\s]{7,}$" required></label>
                 <label>Email* <input id="email" type="email" name="email" placeholder="someone12@gmail.com" required></label>
                 <label>Mobile Phone Number* <input id="phoneNum" type="tel" name="phoneNumber" required></label>
                 
@@ -47,22 +47,64 @@
             <fieldset>
                 <legend>Business Information</legend>
                 <label>Business Name* <input id="businessName" type="text" name="businessName" required></label>
-                
-                <div>Membership Level</div>
-                <label><input id="membershipLevel" type="radio" name="membership" value="Non-Profit Organization">Non-Profit Organization</label>
-                <label><input id="membershipLevel" type="radio" name="membership" value="Bronze Membership">Bronze Membership</label>
-                <label><input id="membershipLevel" type="radio" name="membership" value="Silver Membership">Silver Membership</label>
-                <label><input id="membershipLevel" type="radio" name="membership" value="Gold Membership">Gold Membership</label>
-
-                <label>Business Information <textarea id="businessInfo" name="businessInfo" rows="5" cols="50"></textarea></label>
-                <label>Timestamp <input id="timestamp" type="hidden" name="timestamp"></label>
+                <label>Business Description <textarea id="businessInfo" name="businessInfo" rows="10" cols="70"></textarea></label>
             </fieldset>
+            <fieldset>
+                <legend>Membership Level</legend>
+                <label><input id="membershipLevel1" type="radio" name="membership" value="Non-Profit Organization"> Non-Profit Organization</label>
+                <label><input id="membershipLevel2" type="radio" name="membership" value="Bronze Membership"> Bronze Membership</label>
+                <label><input id="membershipLevel3" type="radio" name="membership" value="Silver Membership"> Silver Membership</label>
+                <label><input id="membershipLevel4" type="radio" name="membership" value="Gold Membership"> Gold Membership</label>
+            </fieldset>
+            <label><input id="timeStamp" type="hidden" name="timestamp"></label>
             <button id="applyBnt" type="submit">Apply for Membership</button>
         </form>
-
-        <section class="benifits">
-
-        </section>
+        <div id="lineBreak"></div>
+        <table>
+            <caption>Table 1: Membership Benifits Comparison</caption>
+            <thead>
+                <tr>
+                    <th colspan="5">Membership Benifits</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>Cost</td>
+                    <td>Local Spotlight</td>
+                    <td>Business Training</td>
+                    <td>Special Events</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Non-Profit</th>
+                    <td>0$/<br>Month</td>
+                    <td>✔️</td>
+                    <td>❌</td>
+                    <td>❌</td>
+                </tr>
+                <tr>
+                    <th>Bronze Membership</th>
+                    <td>50$/<br>Month</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>❌</td>
+                </tr>
+                <tr>
+                    <th>Silver Membership</th>
+                    <td>100$/<br>Month</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>❌</td>
+                </tr>
+                <tr>
+                    <th>Gold Membership</th>
+                    <td>150$/<br>Month</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+            </tbody>
+        </table>
     </main>
 
     <footer>
@@ -81,6 +123,6 @@
     </footer>
     <script src="scripts/main.js"></script>
     <script src="scripts/darkview.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/join.js"></script>
 </body>
 </html>

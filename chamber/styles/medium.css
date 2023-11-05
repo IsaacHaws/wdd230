@@ -174,4 +174,76 @@
     .image1 img:hover, .image2 img:hover, .image3 img:hover, .image4 img:hover, .image5 img:hover {
         border: var(--secondary-color) solid 15px;
     }
+
+
+    /* Join Page Styles */
+
+    main {
+        justify-items: center;
+        grid-template-columns: 40% 200px 40%;
+        align-items: center;
+    }
+
+    .titleLine {
+        min-width: 300px;
+    }
+
+    form {
+        grid-column: 1/2;
+    }
+
+    #lineBreak {
+        grid-column: 2/3;
+        display: initial;
+        margin: 0 20px;
+    }
+
+    table {
+        display: initial;
+        grid-column: 3/4;
+        border: black solid 3px;
+        border-radius: 10px;
+        border-spacing: 0;
+        height: 688px;
+        margin-left: 60px;
+    }
+
+    caption {
+        text-align: center;
+        caption-side: bottom;
+        padding-top: 10px;
+    }
+
+    thead tr:first-child th {
+        color: white;
+        background-color: black;
+        font-family: var(--heading-font);
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    thead tr:nth-child(2) th {
+        background-color: black;
+        padding: 10px 15px;
+    }
+
+    thead tr:nth-child(2) td {
+        background-color: var(--secondary-color);
+        font-family: var(--paragraph-font);
+        padding: 10px 15px;
+        text-align: center;
+    }
+
+    tbody tr {
+        text-align: center;
+        font-family: var(--paragraph-font);
+    }
+
+    tbody tr th {
+        color: white;
+        background-color: black;
+        font-family: var(--paragraph-font);
+        padding: 55px 5px;
+    }
+
  }
