@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Playfair+Display:wght@500&family=Raleway:wght@300&family=Roboto+Slab&display=swap');
+
+
+:root {
+    --heading-font: "Kanit", "Roboto Slab";
+    --paragraph-font: "Raleway", "Playfair Display";
+    
+    --card-background: rgb(66, 146, 170); 
+}
+
+header {
+    font-family: var(--heading-font);
+    color: blue;
+    text-shadow: 0 0 20px #000;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+main {
+    margin: 20px;
+    background-color: grey;
+    box-shadow: 0 0 30px 10px #777;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+section {
+    text-align: center;
+    margin: 1rem;
+    background-color: var(--card-background);
+    border: black solid 3px;
+    border-radius: 10px;
+}
+
+section h2 {
+    font-family: var(--paragraph-font);
+    font-size: 30px;
+    color: black;
+}
+
+section p {
+    font-family: "Playfair Display";
+    color: black;
+    font-weight: 900;
+}
+
+section img {
+    width: 70%;
+    height: auto;
+    max-width: 350px;
+    padding-bottom: 20px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(71, 71, 71);
+    margin: 50px 0 0 0;
+    color: white;
+    font-family: var(--heading-font);
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
