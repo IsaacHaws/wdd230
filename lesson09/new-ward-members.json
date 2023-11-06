@@ -1,0 +1,33 @@
+{
+    "familyName" : "Smith",
+    "movedDate" : "7/4/23",
+    "peopleNum" : 5,
+    "visitedByBishopric" : false,
+    "familyMembers" : [
+        {
+            "name" : "James",
+            "gender" : "Male",
+            "birthdate" : "3/13/1994"
+        },
+        {
+            "name" : "Amy",
+            "gender" : "Female",
+            "birthdate" : "5/24/1995"
+        },
+        {
+            "name" : "Jack",
+            "gender" : "Male",
+            "birthdate" : "2/25/2016"
+        },
+        {
+            "name" : "Piper",
+            "gender" : "Female",
+            "birthdate" : "7/4/2018"
+        },
+        {
+            "name" : "Harper",
+            "gender" : "Female",
+            "birthdate" : "12/26/2020"
+        }
+    ]
+}
