@@ -4,11 +4,11 @@
             "lesson": "02",
             "links": [
                 {
-                    "url": "lesson1/media-query.html",
+                    "url": "lesson01/media-query.html",
                     "title": "Media Query"
                 },
                 {
-                    "url": "lesson2/design-principles.html",
+                    "url": "lesson02/design-principles.html",
                     "title": "Design Principles"
                 }
             ]
