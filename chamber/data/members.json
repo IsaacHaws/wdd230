@@ -1,0 +1,67 @@
+{
+    "companys": [
+        {
+            "name": "Monteith Abstract & Title",
+            "address": "213 Mill Creek Dr Suite 140, Salado, TX 76571",
+            "phoneNum": "(254) 947-3922",
+            "websiteURL": "https://monteithtitle.com/",
+            "icon": "http://monteithtitle.com/wp-content/uploads/2019/12/Monteith-logo-HZ-RGB-1.png",
+            "membershiplevel": "Silver Membership",
+            "otherInfo": "Tile Company"
+        },
+        {
+            "name": "Centraland Title Company",
+            "address": "221 N Main St #5627, Salado, TX 76571",
+            "phoneNum": "(254) 771-1352",
+            "websiteURL": "https://centralandtitle.com/",
+            "icon": "https://centralandtitle.com/wp-content/uploads/2016/06/cropped-cropped-HEADER2-2.jpg",
+            "membershiplevel": "Bronze Membership",
+            "otherInfo": "Title Company"
+        },
+        {
+            "name": "Salado Woodwork",
+            "address": "1421 N Stagecoach Rd unit D3, Salado, TX 76571",
+            "phoneNum": "(254) 317-5629",
+            "websiteURL": "https://saladowoodwork.com/",
+            "icon": "https://img1.wsimg.com/isteam/ip/a63f8896-63de-4001-988c-25278924d0ef/saladowoodwork%20facebook.png/:/rs=w:400,h:400,cg:true,m/cr=w:400,h:400/qt=q:95",
+            "membershiplevel": "Silver Membership",
+            "otherInfo": "Cabinet maker in Salado, Texas"
+        },
+        {
+            "name": "The Real Estate Business School of Salado",
+            "address": "3366 FM2484, Salado, TX 76571",
+            "phoneNum": "(254) 346-4160",
+            "websiteURL": "https://trebssalado.com/",
+            "icon": "https://trebssalado.com/wp-content/uploads/2017/12/the-real-estate-business-school-of-salado-logo.png",
+            "membershiplevel": "Gold Membership",
+            "otherInfo": "Real Estate School"
+        },
+        {
+            "name": "Sandor Construction",
+            "address": "405 N Main St, Salado, TX 76571",
+            "phoneNum": "(254) 947-8020",
+            "websiteURL": "https://www.sandortx.com/",
+            "icon": "https://images.squarespace-cdn.com/content/v1/5fadf692253fde4850243e42/1617548828876-SX5KFXJDH4SA7986V5AM/SandorLogo.png?format=1500w",
+            "membershiplevel": "Gold Membership",
+            "otherInfo": "General contractor"
+        },
+        {
+            "name": "Salado Glassworks",
+            "address": "2 Peddler's Alley, Salado, TX 76571",
+            "phoneNum": "(254) 947-0339",
+            "websiteURL": "https://www.saladoglassworks.com/",
+            "icon": "https://lirp.cdn-website.com/385fd8ab/dms3rep/multi/opt/logo+%283%29-219w.png",
+            "membershiplevel": "Gold Membership",
+            "otherInfo": "Glass blower in Salado, Texas"
+        },
+        {
+            "name": "Keith Ace Hardware",
+            "address": "213 Mill Creek Dr, Salado, TX 76571",
+            "phoneNum": "(254) 947-4008",
+            "websiteURL": "https://www.keithacehardware.com/",
+            "icon": "https://lh3.googleusercontent.com/p/AF1QipPyxFYr8zcNaAglZHKRxU7c7tdH1XJeSSkT295Z=s1360-w1360-h1020",
+            "membershiplevel": "Gold Membership",
+            "otherInfo": "Hardware store"
+        }
+    ]
+}
