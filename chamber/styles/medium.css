@@ -246,4 +246,41 @@
         padding: 55px 5px;
     }
 
+
+    
+    /* Directory Page Styles */
+
+    #directoryMain {
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    .grid {
+        display: grid;
+	    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        width: 100%;
+        justify-items: center;
+    }
+
+    .grid section {
+        min-width: 180px;
+        min-height: 150px;
+    }
+
+
+    .list {
+        width: 100%;
+    }
+
+    .list section {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        font-size: 13px;
+        padding: 15px 5px;
+    }
  }
