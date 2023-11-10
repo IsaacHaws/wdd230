@@ -148,4 +148,12 @@
         justify-items: center;
         grid-template-columns: 40% 200px 40%;
     }
+
+
+    /* Directory Page Styles */
+
+    .grid section {
+        min-width: 180px;
+        min-height: 280px;
+    }
  }
