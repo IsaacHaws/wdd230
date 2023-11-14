@@ -145,6 +145,15 @@ main h2 {
     font-family: "Raleway";
 }
 
+#weather {
+    margin: 20px 10px;
+    border-bottom: black solid 2px;
+}
+
+#weather #weatherCondition {
+    margin-top: 5px;
+}
+
 main ul {
     margin-bottom: 0;
     list-style-type:decimal-leading-zero;
