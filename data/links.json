@@ -1,6 +1,19 @@
 {
     "lessons": [
         {
+            "lesson": "01",
+            "links": [
+                {
+                    "url": "lesson01/holygrail.html",
+                    "title": "Holygrail"
+                },
+                {
+                    "url": "https://codepen.io/Critter25/pen/jOXwLgr",
+                    "title": "Codepen"
+                }
+            ]
+        },
+        {
             "lesson": "02",
             "links": [
                 {
@@ -108,8 +121,8 @@
             "lesson": "10",
             "links": [
                 {
-                    "url": "",
-                    "title": ""
+                    "url": "lesson10/weather.html",
+                    "title": "Weather API"
                 }
             ]
         }
