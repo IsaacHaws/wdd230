@@ -24,7 +24,7 @@ bannerBnt.addEventListener("click", () => {
 
 let dayOfWeek = new Date().getDay()
 
-dayOfWeek = 2;
+//dayOfWeek = 2;
 
 if ((dayOfWeek == 1) || (dayOfWeek == 2) || (dayOfWeek == 3)) {
     banner.style.display = "show";
