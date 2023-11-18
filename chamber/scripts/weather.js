@@ -1,4 +1,4 @@
-const url = "https://api.openweathermap.org/data/2.5/forecast?zip=76571,us&units=imperial&cnt=5&appid=407e6ab59006e88662f16686d1960fdf";
+const url = "https://api.openweathermap.org/data/2.5/forecast?zip=76571,us&units=imperial&cnt=6&appid=407e6ab59006e88662f16686d1960fdf";
 
 const currentIcon = document.querySelector("#weatherIcon");
 const currentTemp = document.querySelector("#temp");

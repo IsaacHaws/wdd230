@@ -14,7 +14,6 @@ if (userTemp <= 50 & userWind > 3) {
     windInfo.innerHTML = calculateWindChill(userTemp, userWind);
 }
 else {
-    //alert("Enter a temperature below 50F and a wind speed greater than 3 MPH");
     windInfo.innerHTML = "Wind Chill: <br> N/A";
 }
 
