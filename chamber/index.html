@@ -18,22 +18,31 @@
 </head>
 <body>
     <div id="darkview">🕶️</div>
+
+    <div id="banner">
+        <div id="bannerBnt">❌</div>
+        <p>Come and join us Wednesday at 7:00pm for Salado's Chamber of Commerce Meet and Greet! All are welcome to attend.  </p>
+    </div>
+
     <header>
         <img src="images/map_of_salado_tx.webp" alt="Map of Texas with Salado Marked">
         <button id="menuButton"></button>
     </header>
+
     <nav id="navigation">
         <a href="index.html">Home</a>
         <a href="discover.html">Discover</a>
         <a href="directory.html">Directory</a>
         <a href="join.html">Join</a>
     </nav>
+
     <main>
         <div class="heroImg">
             <img src="images/salado-hero-img.webp" alt="Hero Pic">
             <h1 class="centerText">Welcome to Salado's Chamber of Commerce</h1>
         </div>
-        <a id="join" href="#">Join Us</a>
+        <a id="join" href="join.html">Join Us</a>
+
         <section class="events">
             <h2 class="heading">Upcoming Events</h2>
             <div class="eventCard">
@@ -49,6 +58,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum suscipit, sed non fugit atque maxime, numquam consequuntur facilis quas minima a perferendis eius sapiente omnis repudiandae fugiat. Debitis, laudantium natus.</p>
             </div>
         </section>
+
         <section class="spotlights">
             <h2 class="heading">Business Spotlights</h2>
             <div class="spotlightCard">
@@ -60,12 +70,24 @@
                 <img src="images/ace-hardware-spotlight.webp" alt="Ace Hardware">
             </div>
         </section>
+
         <section id="weather">
             <h2 class="heading">Weather</h2>
-            <a class="weatherwidget-io" href="https://forecast7.com/en/30d95n97d54/salado/?unit=us" data-label_1="SALADO" data-font="Roboto Slab" data-days="5" data-theme="original">SALADO</a>
+            <!-- <a class="weatherwidget-io" href="https://forecast7.com/en/30d95n97d54/salado/?unit=us" data-label_1="SALADO" data-font="Roboto Slab" data-days="5" data-theme="original">SALADO</a>
             <script>
                 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-            </script>
+            </script> -->
+            <div class="currentWeather">
+                <p>Salado</p>
+                <img id="weatherIcon" src="#" alt="#">
+                <div>
+                    <p id="temp"></p>
+                    <p id="weatherDiscription"></p>
+                </div> 
+            </div>
+            <div class="futureWeather">
+                
+            </div>
             <div class="windChillBox">
                 <h3>Wind Chill</h3>
                 <div>
@@ -75,6 +97,7 @@
                 <p class="windChillInfo"></p>
             </div> 
         </section>
+
         <section class="employeeSpotlight">
             <h2 class="heading">Employee Spotlight</h2>
             <h3>Thomas G Gibbs</h3>
@@ -82,6 +105,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, a quasi minima autem explicabo error laudantium fuga eligendi aperiam labor</p>
         </section>
     </main>
+
     <footer>
         <img src="images/map_of_salado_tx.webp" alt="map_of_salado_tx">
         <div class="dividingLine"></div>
@@ -91,13 +115,14 @@
         </div>
         <div id="navigationLinks">
             <a href="index.html">Home</a>
-            <a href="#">Discover</a>
-            <a href="#">Directory</a>
-            <a href="#">Join</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
         </div>
     </footer>
     <script src="scripts/main.js"></script>
     <script src="scripts/darkview.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>

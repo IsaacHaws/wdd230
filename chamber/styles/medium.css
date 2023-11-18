@@ -21,7 +21,7 @@
         margin: 0 10px;
         background-color: initial;
         position: relative;
-        top: -5rem;
+        top: 5rem;
         justify-content: space-evenly;
     }
 
@@ -47,6 +47,10 @@
     #navigation a:hover {
         background-color: white;
         color: black;
+    }
+
+    #navigation.close {
+        top: -5rem;
     }
 
     main {
@@ -178,7 +182,7 @@
 
     /* Join Page Styles */
 
-    main {
+    #joinMain {
         justify-items: center;
         grid-template-columns: 40% 200px 40%;
         align-items: center;

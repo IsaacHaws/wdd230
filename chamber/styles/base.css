@@ -30,6 +30,26 @@ body {
     height: 50px;
 }
 
+#banner {
+    background-color: var(--secondary-color);
+    font-family: var(--paragraph-font);
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#banner.close {
+    display: none;
+}
+
+#bannerBnt {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
 header, nav, footer {
     min-width: 400px;
 }
@@ -209,6 +229,47 @@ main {
 
 #weather h2 {
     margin-bottom: 0;
+}
+
+#weather {
+    min-width: 400px;
+}
+
+.currentWeather {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #1f567c;
+    color: white;
+    font-family: var(--heading-font);
+    font-size: 20px;
+}
+
+.currentWeather div {
+    font-size: 16px;
+}
+
+.futureWeather {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    color: white;
+}
+
+.futureWeather section {
+    width: 100%;
+    font-family: var(--paragraph-font);
+}
+
+.futureWeather section:nth-child(odd) {
+    background-color: #1a496c;
+}
+
+.futureWeather section:nth-child(even) {
+    background-color:#1f567c;
 }
 
 .windChillBox {
