@@ -31,5 +31,5 @@ if ((dayOfWeek == 1) || (dayOfWeek == 2) || (dayOfWeek == 3)) {
 }
 else {
     banner.style.display = "none";
-    navigation.style.top  = "5rem";
+    navigation.style.top  = "-5rem";
 }
