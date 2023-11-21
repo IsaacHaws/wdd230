@@ -60,11 +60,21 @@ header {
     flex-direction: column;
     align-items: center;
     background-color: var(--primary-color);
+    font-family: var(--heading-font);
+    color: white;
+    text-align: center;
+}
+
+header h2 {
+    margin: 25px 40px;
+    margin-bottom: 0;
+    font-size: 25px;
 }
 
 header img {
     padding-top: 30px;
-    width: 60%;
+    width: 40%;
+    max-width: 180px;
 }
 
 #menuButton {
@@ -101,7 +111,7 @@ header img {
 }
 
 #navigation a:hover {
-    background-color: var(--primary-color);
+    background-color: whitesmoke;
 }
 
 .open a {
@@ -141,11 +151,13 @@ main {
     color: black;
     background-color: var(--secondary-color);
     border: black solid 5px;
+    border-radius: 10px;
     padding: 10px 20px;
     font-size: 20px;
     font-family: var(--paragraph-font);
     text-decoration: none;
     justify-content: center;
+    margin: 0 120px;
 }
 
 .events {
@@ -166,6 +178,8 @@ main {
 }
 
 .eventCard {
+    font-family: var(--paragraph-font);
+    text-align: center;
     width: 90%;
     border: black solid 2px;
     border-radius: 5px;
@@ -178,18 +192,6 @@ main {
     background-color: var(--primary-color);
     margin: 0;
     padding: 10px;
-}
-
-.events .eventCard:nth-child(2) {
-    font-family: var(--paragraph-font);
-    text-align: center;
-    margin-right: 10px;
-}
-
-.events .eventCard:nth-child(3) {
-    font-family: var(--paragraph-font);
-    text-align: center;
-    margin-left: 10px;
 }
 
 .events .eventCard:nth-child(2) img {
@@ -213,19 +215,45 @@ main {
 }
 
 .spotlightCard {
+    display: flex;
     max-width: 350px;
-}
-
-.spotlightCard h3 {
-    text-align: center;
-    font-family: var(--paragraph-font);
+    min-width: 350px;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    border: #000000 solid 2px;
+    border-radius: 10px;
 }
 
 .spotlightCard img {
-    width: 100%;
-    border: burlywood solid 2px;
-    border-radius: 5px;
+    width: 90%;
+    max-width: 200px;
+    margin: 20px;
 }
+
+.spotlightCard a {
+    text-align: center;
+    font-family: var(--paragraph-font);
+    font-size: 20px;
+    color: blue;
+    margin: 5px 0 20px 0;
+}
+
+.spotlightCard p {
+    text-align: center;
+    font-family: var(--paragraph-font);
+    font-size: 17px;
+    padding-bottom: 10px;
+    border-bottom: #000000 solid 2px;
+    width: 80%;
+}
+
+.spotlightCard h3 {
+    font-family: var(--paragraph-font);
+    font-size: 15px;
+    margin: 0;
+}
+
 
 #weather h2 {
     margin-bottom: 0;

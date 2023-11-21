@@ -12,13 +12,11 @@ menuButton.addEventListener("click", () => {
 })
 
 
-
 const banner = document.querySelector("#banner");
 const bannerBnt = document.querySelector("#bannerBnt");
 
 bannerBnt.addEventListener("click", () => {
     banner.classList.toggle("close");
-    navigation.classList.toggle("close");
 })
 
 
@@ -31,5 +29,4 @@ if ((dayOfWeek == 1) || (dayOfWeek == 2) || (dayOfWeek == 3)) {
 }
 else {
     banner.style.display = "none";
-    navigation.style.top  = "-5rem";
 }
