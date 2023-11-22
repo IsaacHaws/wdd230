@@ -9,7 +9,7 @@ const cards = document.querySelector(".grid");
 async function getMemberData(url) {
     const response = await fetch(url);
     const data = await response.json();
-    console.log(data.companys);
+    //console.log(data.companys);
     displayMembers(data.companys);
 }
 
