@@ -15,7 +15,7 @@ function displayChamberMembers(data) {
     
     let randomArray = [];
     
-    for (let i = 1; i <= 2; i++) {
+    for (let i = 1; i <= 4; i++) {
         let random = Math.floor(Math.random() * companys.length);
 
         if (randomArray.includes(random) == false) {
