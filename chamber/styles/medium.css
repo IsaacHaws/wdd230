@@ -36,11 +36,7 @@
         font-size: 20px;
         padding: 20px 35px;
     }
-
-    #navigation a:hover {
-        background-color: whitesmoke;
-    }
-
+    
     main {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -111,8 +107,8 @@
     
     #weather {
         grid-column: 1/4;
-        margin: 10px 20px;
-        margin-bottom: 30px;
+        margin: 30px 5px;
+        min-width: auto;
     }
 
     .employeeSpotlight {
@@ -180,8 +176,9 @@
 
     #joinMain {
         justify-items: center;
-        grid-template-columns: 40% 200px 40%;
+        grid-template-columns: 1fr 1fr;
         align-items: center;
+        margin: 0;
     }
 
     .titleLine {
@@ -192,15 +189,15 @@
         grid-column: 1/2;
     }
 
-    #lineBreak {
+    /* #lineBreak {
         grid-column: 2/3;
         display: initial;
         margin: 0 20px;
-    }
+    } */
 
     table {
         display: initial;
-        grid-column: 3/4;
+        grid-column: 2/4;
         border: black solid 3px;
         border-radius: 10px;
         border-spacing: 0;
