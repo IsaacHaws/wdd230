@@ -18,8 +18,8 @@
     /* Join Page Styles */
 
     #joinMain {
+        grid-template-columns: 1fr 1fr;
         justify-items: center;
-        grid-template-columns: 40% 200px 40%;
     }
 
 
