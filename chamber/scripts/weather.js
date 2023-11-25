@@ -40,7 +40,7 @@ function displayFutureWeather(data) {
     for (let index = 1; index <= 4; index++) {
         futureDays.push(data.list[index * 8]);
     }
-    console.log(futureDays);
+    //console.log(futureDays);
 
     futureDays.forEach((day) => {
         let weatherCard = document.createElement("section");
