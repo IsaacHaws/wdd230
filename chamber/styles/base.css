@@ -202,11 +202,7 @@ main {
     padding: 10px;
 }
 
-.events .eventCard:nth-child(2) img {
-    float: left;
-}
-
-.events .eventCard:nth-child(3) img {
+.events .eventCard img {
     width: 100%;
 }
 
@@ -746,7 +742,6 @@ fieldset:nth-child(3) label input {
     font-size: 15px;
     font-family: var(--heading-font);
 }
-
 
 .list {
     display: flex;
