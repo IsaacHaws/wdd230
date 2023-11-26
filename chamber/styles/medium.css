@@ -211,9 +211,6 @@
 
 
     
-
-
-    
     /* Directory Page Styles */
 
     #directoryMain {
@@ -221,7 +218,6 @@
         flex-direction: column;
     }
     
-
     .grid {
         display: grid;
 	    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -237,7 +233,6 @@
         align-items: center;
         justify-content: center;
     }
-
 
     .list {
         width: 100%;

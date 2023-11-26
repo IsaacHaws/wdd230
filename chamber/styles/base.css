@@ -118,7 +118,7 @@ header img {
 }
 
 #navigation a.active {
-    color: white;
+    color: #000971;
 }
 
 .open a {
@@ -726,6 +726,10 @@ fieldset:nth-child(3) label input {
     margin: .8rem 0;
     padding: 20px 10px;
     box-shadow: 0 8px 4px 3px rgba(0, 0, 0, 0.2);
+}
+
+.grid section img {
+    width: 70%;
 }
 
 .grid .cardTitle {
