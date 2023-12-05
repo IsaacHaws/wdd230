@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=DM+Serif+Display&family=Exo+2:wght@300&family=IBM+Plex+Mono&family=Inconsolata&family=Manrope:wght@600&family=Work+Sans&display=swap');
+
+:root {
+    /* Colors */
+    --gunmetal: #00272bff;
+    --mint-cream: #eff9f0ff;
+    --cerulean: #4281a4ff;
+    --atomic-tangerine: #ff934fff;
+    --amaranth-purple: #a40e4cff;
+
+    /* Fonts */
+    --heading-font-1: "Manrope", "Comfortaa";
+    --heading-font-2: "Exo 2", "DM Serif Display";
+    --paragraph-font-1: "Inconsolata", "Work Sans", "IBM Plex Mono";
+}
+
+body {
+    margin: 0;
+}
+
+header, nav, main, footer {
+    width: 100%;
+    min-width: 400px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--gunmetal);
+    position: relative;
+}
+
+#pageLogo {
+    width: 20%;
+    min-width: 120px;
+    background-color: var(--mint-cream);
+    border-radius: 50%;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+header h1 {
+    color: white;
+    font-size: 2rem;
+    font-family: var(--heading-font-2);
+    margin: 10px 0 15px 0
+}
+
+#menuButton {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
+    color: white;
+    background-color: var(--cerulean);
+}
+
+#menuButton::before {
+    content: "☰";
+}
+
+#menuButton.open::before {
+    content: "❌";
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    background-color: var(--amaranth-purple);
+    text-align: center;
+}
+
+nav.open {
+    display: flex;
+}
+
+#navigation ul {
+   padding: 0; 
+}
+
+#navigation ul li {
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+#navigation ul li:hover {
+    background-color: var(--cerulean);
+}
+
+#navigation ul a {
+    color: white;
+    font-family: var(--heading-font-1);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#navigation a.active {
+    color: rgb(255, 208, 120);
+}
+
+main {
+    width: 100%;
+    background-color: var(--mint-cream);
+    padding-bottom: 30px;
+}
+
+picture img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+#reviews {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.reviewCard {
+    width: 200px;
+    min-width: 150px;
+    color: wheat;
+    background-color: var(--amaranth-purple);
+    font-family: var(--heading-font-1);
+    border-radius: 0 30px 0 30px;
+    padding: 20px;
+    margin: 20px 10px;
+}
+
+.reviewCard img {
+    width: 50%;
+}
+
+.reviewText {
+    line-height: normal;
+}
+
+.reviewName {
+    text-align: right;
+}
+
+#weather {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   
+}
+
+.weatherCard {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 150px;
+    background-color: var(--cerulean);
+    margin: 15px 20px;
+}
+
+.currentWeather {
+    box-shadow: 20px 20px 3px gray;
+    align-self: flex-start;
+
+}
+
+.forcast {
+    box-shadow: -17px 17px 3px gray;
+    align-self: flex-end;
+}
+
+
+
+
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-family: var(--heading-font-2);
+    background-color: var(--atomic-tangerine);
+    max-height: 300px;
+    justify-content: space-around;
+}
+
+footer img {
+    width: 90px;
+    height: auto;
+    background-color: var(--mint-cream);
+    border-radius: 50%;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer div {
+    margin: 0 10px;
+}
+
+footer div:nth-child(1) {
+    max-width: 200px;
+}
+
+footer div:nth-child(2), footer div:nth-child(3) {
+    text-align: left;
+    min-width: 95px;
+}
+
+footer div:nth-child(2) ul, footer div:nth-child(3) ul {
+    padding-left: 25px;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+footer div:nth-child(4) {
+    align-self: center;
+    font-family: var(--heading-font-1);
+    font-size: 15px;
+}
