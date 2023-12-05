@@ -15,77 +15,166 @@
     <link rel="stylesheet" href="styles/large.css">
 </head>
 <body>
-    <nav>
-        <img src="images/logo.png" alt="logo">
-        <ul id="pageLinks">
-            <li><a href="index.html">Home</a></li>
+    <header>
+        <img id="pageLogo" src="images/logo.png" alt="logo">
+        <h1>Scoots Rentals</h1>
+        <button id="menuButton" title="menuBnt"></button>
+    </header>
+    <nav id="navigation">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
             <li><a href="#">Rentals</a></li>
             <li><a href="#">Reservations</a></li>
             <li><a href="#">Contact Us</a></li>
         </ul>
-        <div class="soicalLinks">
+        <!-- <div class="soicalLinks">
             <a target="_blank" href="https://www.linkedin.com/in/isaachaws/">
                 <img src="images/LinkedIn_logo_initials.webp" alt="Linkedin Logo">
             </a>
             <a target="_blank" href="#">
                 <img src="#" alt="____ Logo">
             </a>
-        </div>
+        </div> -->
     </nav>
     <main>
-        <div id="heroImg">
-            <img src="#" alt="#">
-            <h1>Scoots</h1>
-        </div>
+        <picture>
+            <source srcset="images/heroimg_small.webp" media="(max-width: 500px)">
+            <source srcset="images/heroimg_large.webp" media="(max-width: 900px)">
+            <img src="images/heroimg_normal.webp" alt="Pic of Cozumel, Mexico" width="1600" height="907">
+        </picture>
+        
+        <a href="#"><button class="rentBnt" type="button" title="rentBnt">&#128269;Rent A Scooter</button></a>
+        
 
-        <div class="rentBnt">Rent A Scooter</div>
+        <table>
+            <caption>Table 1: Rental Fees and Information</caption>
+            <thead>
+                <tr>
+                    <th colspan="8">Rental Pricing</th>
+                </tr>
+                <tr>
+                    <th>Vehicle Name</th>
+                    <th>Maximum Load</th>
+                    <th>Price per/Hour</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Honda Metropolitan Scooter</td>
+                    <td>1 Person</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Honda Dio Scooter</td>
+                    <td>2 Persons</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Honda PCX150 Scooter</td>
+                    <td>2 Persons</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Honda Pioneer 1000 ATV Scooter</td>
+                    <td>4 Persons</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Jeep Wrangler - 4 Door with A/C</td>
+                    <td>5 Persons</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Jeep Wrangler - 2 Door</td>
+                    <td>4 Persons</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
 
         <section id="reviews">
             <div class="reviewCard">
-                <img src="#" alt="fiveStars">
-                <p class="reviewText">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, nam eaque! Ut quos voluptatibus maxime, explicabo consectetur architecto praesentium laborum quidem</p>
-                <p class="reviewName">- [Reviewer Name]</p>
+                <img src="images/5-star-rating.png" alt="fiveStars">
+                <p class="reviewText">This was so fun! I would recomend doing this to anyone! It is a great way to spend your with your family while viewing nature with ease!</p>
+                <p class="reviewName">--Linda Webster</p>
             </div>
 
             <div class="reviewCard">
-                <img src="#" alt="fiveStars">
+                <img src="images/5-star-rating.png" alt="fiveStars">
                 <p class="reviewText">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, nam eaque! Ut quos voluptatibus maxime, explicabo consectetur architecto praesentium laborum quidem</p>
-                <p class="reviewName">- [Reviewer Name]</p>
+                <p class="reviewName">--James Thread</p>
             </div>
 
             <div class="reviewCard">
-                <img src="#" alt="fiveStars">
+                <img src="images/5-star-rating.png" alt="fiveStars">
                 <p class="reviewText">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, nam eaque! Ut quos voluptatibus maxime, explicabo consectetur architecto praesentium laborum quidem</p>
-                <p class="reviewName">- [Reviewer Name]</p>
+                <p class="reviewName">--Jimmey Gates</p>
             </div>
         </section>
 
         <section id="weather">
-            <div class="weatherCard">
-
+            <div class="weatherCard currentWeather">
+                <div>
+                    <img id="currentImg" src="" alt="">
+                    <p id="currentDiscription"></p> 
+                </div>
+                <div>
+                    <p id="currentTemp"></p>
+                    <p id="currentHumidity"></p>
+                </div>
+            </div>
+            <div class="weatherCard forcast">
+                <h2 id="weekday"></h2>
+                <div>
+                   <img id="weatherImg" src="" alt="">
+                    <p id="weatherDiscription"></p> 
+                </div>
+                <div>
+                    <p id="temp"></p>
+                    <p id="humidity"></p>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
         <div>
-            <img src="images/logo.png" alt="logo">
-            <p>&copy; <span id="currentYear">2024</span> Isaac Haws</p>
+            <img src="images/logo.png" alt="logo" width="100px" height="100px">
+            <p>&copy; <span id="currentYear"></span> Isaac Haws</p>
         </div>
         
-        <div id="footerLinks">
-            <div>
-                <h3 class="header">Locations</h3>
-                <p class="location">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p class="location">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
+        <div>
+            <h3>Locations</h3>
+            <ul>
+                <li><a href="https://www.google.com/maps/place/FERRY+TO+PLAYA+DEL+CARMEN/@20.5117836,-86.9503826,18.34z/data=!4m6!3m5!1s0x8f4e59cebd031b81:0x1d4d43952273f214!8m2!3d20.5114653!4d-86.9500893!16s%2Fg%2F11b72q30cp?entry=ttu" target="_blank">Playa del Carmen Ferry dock</a></li>
+                <li><a href="https://www.google.com/maps/place/Seaport+-+Puerta+Maya/@20.4759915,-86.9772149,18z/data=!3m1!4b1!4m6!3m5!1s0x8f4e574915f5accd:0xc8f310e1602b6808!8m2!3d20.475989!4d-86.9759274!16s%2Fg%2F1tqcm8f2?entry=ttu" target="_blank">Terminal Puerta Maya</a></li>
+            </ul>
+        </div>
             
-            <div>
-                <h3 class="header">Soical Links</h3>
-                <a href="#">Lorem Ipsum</a>
-                <a href="#">Lorem Ipsum</a>
-            </div>
+        <div>
+            <h3>Soical Links</h3>
+            <ul>
+                <li><a href="#">Lorem Ipsum</a></li>
+                <li><a href="#">Lorem Ipsum</a></li>
+            </ul>
+        </div>
+        <div>
+            <p id="lastModified"></p>
         </div>
     </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>
