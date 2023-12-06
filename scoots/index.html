@@ -12,6 +12,7 @@
     <title>Scoots Home Page</title>
     <link rel="icon" href="scoots_favicon.ico">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
 </head>
 <body>
@@ -27,14 +28,7 @@
             <li><a href="#">Reservations</a></li>
             <li><a href="#">Contact Us</a></li>
         </ul>
-        <!-- <div class="soicalLinks">
-            <a target="_blank" href="https://www.linkedin.com/in/isaachaws/">
-                <img src="images/LinkedIn_logo_initials.webp" alt="Linkedin Logo">
-            </a>
-            <a target="_blank" href="#">
-                <img src="#" alt="____ Logo">
-            </a>
-        </div> -->
+
     </nav>
     <main>
         <picture>
@@ -42,10 +36,9 @@
             <source srcset="images/heroimg_large.webp" media="(max-width: 900px)">
             <img src="images/heroimg_normal.webp" alt="Pic of Cozumel, Mexico" width="1600" height="907">
         </picture>
-        
-        <a href="#"><button class="rentBnt" type="button" title="rentBnt">&#128269;Rent A Scooter</button></a>
-        
-
+    
+        <div class="rentBnt"><a href="#">&#128269;Rent A Scooter</a></div>
+    
         <table>
             <caption>Table 1: Rental Fees and Information</caption>
             <thead>
@@ -55,51 +48,52 @@
                 <tr>
                     <th>Vehicle Name</th>
                     <th>Maximum Load</th>
-                    <th>Price per/Hour</th>
+                    <th colspan="5">Price per/Hour</th>
+                </tr>
+                <tr>
+                    <!-- <th colspan="2"></th> -->
+                    <th></th>
+                    <th></th>
+                    <th>Reservation</th>
+                    <th>Walk-In</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>Honda Metropolitan Scooter</td>
                     <td>1 Person</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>$5</td>
+                    <td>$10</td>
                 </tr>
                 <tr>
                     <td>Honda Dio Scooter</td>
                     <td>2 Persons</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>$5</td>
+                    <td>$10</td>
                 </tr>
                 <tr>
                     <td>Honda PCX150 Scooter</td>
                     <td>2 Persons</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>$10</td>
+                    <td>$12</td>
                 </tr>
                 <tr>
                     <td>Honda Pioneer 1000 ATV Scooter</td>
                     <td>4 Persons</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>$10</td>
+                    <td>$12</td>
                 </tr>
                 <tr>
                     <td>Jeep Wrangler - 4 Door with A/C</td>
                     <td>5 Persons</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>$30</td>
+                    <td>$35</td>
                 </tr>
                 <tr>
                     <td>Jeep Wrangler - 2 Door</td>
                     <td>4 Persons</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>$20</td>
+                    <td>$25</td>
                 </tr>
             </tbody>
         </table>
@@ -125,6 +119,7 @@
         </section>
 
         <section id="weather">
+            <h2>Today:</h2>
             <div class="weatherCard currentWeather">
                 <div>
                     <img id="currentImg" src="" alt="">
@@ -135,14 +130,16 @@
                     <p id="currentHumidity"></p>
                 </div>
             </div>
+            <h2>Tommorow:</h2>
             <div class="weatherCard forcast">
-                <h2 id="weekday"></h2>
+                <!-- <h2 id="weekday"></h2> -->
                 <div>
                    <img id="weatherImg" src="" alt="">
                     <p id="weatherDiscription"></p> 
                 </div>
                 <div>
-                    <p id="temp"></p>
+                    <p id="maxTemp"></p>
+                    <p id="minTemp"></p>
                     <p id="humidity"></p>
                 </div>
             </div>
