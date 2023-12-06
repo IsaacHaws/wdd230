@@ -1,0 +1,21 @@
+@media screen and (min-width: 700px) { 
+    #menuButton {
+        display: none;
+    }
+
+    #navigation {
+        display: flex;
+    }
+
+    #navigation ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 5px 0;
+    }
+
+
+
+
+
+}

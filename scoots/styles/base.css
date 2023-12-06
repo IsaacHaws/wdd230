@@ -66,14 +66,16 @@ header h1 {
     content: "❌";
 }
 
-nav {
+
+/* Navigation Styles */
+#navigation {
     display: none;
     flex-direction: column;
     background-color: var(--amaranth-purple);
     text-align: center;
 }
 
-nav.open {
+#navigation.open {
     display: flex;
 }
 
@@ -101,6 +103,8 @@ nav.open {
     color: rgb(255, 208, 120);
 }
 
+
+/* Main Section Styles */
 main {
     width: 100%;
     background-color: var(--mint-cream);
@@ -110,17 +114,75 @@ main {
 picture img {
     width: 100%;
     height: auto;
+    border-bottom: 5px solid cadetblue;
+}
+
+/* Join Button Styles */
+.rentBnt {
+    background-color: var(--cerulean);
+    text-align: center;
+    width: 160px;
+    margin: 30px auto;
+    padding: 10px 15px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.rentBnt a {
+    color: black;
+    text-decoration: none;
+    font-family: var(--heading-font-1);
 }
 
 
+/* Table tyles */
+table {
+    width: 90%;
+    border: 3px solid black;
+    border-spacing: 0;
+    margin: 20px auto;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+caption {
+    caption-side: bottom;
+    padding-top: 10px;
+}
+
+thead tr:first-child th {
+    color: white;
+    background-color: var(--gunmetal);
+    font-size: 20px;
+}
+
+thead th {
+    padding: 10px;
+    font-size: 17px;
+    font-family: var(--heading-font-1);
+    background-color: var(--cerulean);
+}
+
+tbody td {
+    padding: 10px;
+    font-family: var(--heading-font-2);
+}
+
+/* Table Borders */
+thead th, tbody td {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
 
 
+/* Reviews Styles */
 #reviews {
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: 30px 0;
 }
 
 .reviewCard {
@@ -131,7 +193,7 @@ picture img {
     font-family: var(--heading-font-1);
     border-radius: 0 30px 0 30px;
     padding: 20px;
-    margin: 20px 10px;
+    margin: 10px 10px;
 }
 
 .reviewCard img {
@@ -146,26 +208,55 @@ picture img {
     text-align: right;
 }
 
+
+/* Weather Styles */
 #weather {
     display: flex;
     flex-direction: column;
     width: 100%;
-   
+    align-items: center;
+}
+
+#weather h2 {
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-family: var(--paragraph-font-1);
+}
+
+#weather h2:first-child {
+    align-self: flex-start;
+    margin-left: 20px;
 }
 
 .weatherCard {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     width: 50%;
-    height: 150px;
-    background-color: var(--cerulean);
+    min-width: 280px;
+    height: 185px; 
     margin: 15px 20px;
+    background-color: var(--cerulean);
+    font-family: var(--heading-font-1);
+}
+
+.weatherCard div {
+    text-align: center;
+    padding: 0 20px
 }
 
 .currentWeather {
     box-shadow: 20px 20px 3px gray;
     align-self: flex-start;
+}
 
+#currentImg, #weatherImg {
+    width: 70px;
+}
+
+#currentDiscription, #weatherDiscription {
+    margin: 0 0;
 }
 
 .forcast {
@@ -174,10 +265,7 @@ picture img {
 }
 
 
-
-
-
-
+/* Footer Styles */
 footer {
     display: flex;
     flex-direction: row;
@@ -225,4 +313,5 @@ footer div:nth-child(4) {
     align-self: center;
     font-family: var(--heading-font-1);
     font-size: 15px;
+    margin: 0 15px;
 }
