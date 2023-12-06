@@ -43,20 +43,20 @@ const weekDay = document.querySelector("#weekday");
 const weatherImg = document.querySelector("#weatherImg");
 const description = document.querySelector("#weatherDiscription")
 
-const temp = document.querySelector("#temp");
+const maxTemp = document.querySelector("#maxTemp");
+const minTemp = document.querySelector("#minTemp");
 const humidity = document.querySelector("#humidity");
 
 function displayFutureWeather(data) {
-    weekDay.innerHTML = `${new Date(data.list[9].dt).toLocaleDateString("en-US", { weekday: "long" })}:`;
-    
     const imgSrc = `https://openweathermap.org/img/w/${data.list[9].weather[0].icon}.png`;
-    const imgAlt = data.list[9].weather[0].discription;
+    const imgAlt = data.list[9].weather[0].description;
     weatherImg.setAttribute("src", imgSrc);
     weatherImg.setAttribute("alt", imgAlt);
-    description.innerHTML = data.list[9].weather[0].description;
+    description.innerHTML = imgAlt.charAt(0).toUpperCase() + imgAlt.slice(1);
 
-    temp.innerHTML = `Temp: ${data.list[9].main.temp}&#8457;`;
-    humidity.innerHTML = `Humidity: ${data.list[0].main.humidity}%`;
+    maxTemp.innerHTML = `Max Temp: <br>${data.list[9].main.temp_max}&#8457;`;
+    minTemp.innerHTML = `Min Temp: <br>${data.list[9].main.temp_min}&#8457;`;
+    humidity.innerHTML = `Humidity: ${data.list[9].main.humidity}%`;
 }
 
 getWeatherData();
