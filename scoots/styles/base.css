@@ -293,13 +293,17 @@ footer div:nth-child(1) {
     max-width: 200px;
 }
 
-footer div:nth-child(2), footer div:nth-child(3) {
+#locations, #soicalLinks {
     text-align: left;
     min-width: 95px;
 }
 
-footer div:nth-child(2) ul, footer div:nth-child(3) ul {
+#locations ul, #soicalLinks ul {
     padding-left: 25px;
+}
+
+#soicalLinks {
+    display: none;
 }
 
 footer a {
