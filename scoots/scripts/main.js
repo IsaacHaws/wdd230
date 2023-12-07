@@ -11,7 +11,7 @@ menuButton.addEventListener("click", () => {
 //Last Modified
 let lastModified = document.lastModified;
 
-document.querySelector("#lastModified").innerHTML = "Last Modified: " + lastModified;
+document.querySelector("#lastModified").innerHTML = "Last Modified: <br>" + lastModified;
 
 //Cuurent Year
 let currentYear = new Date().getFullYear();
