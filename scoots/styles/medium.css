@@ -1,27 +1,52 @@
-@media screen and (min-width: 700px) { 
+@media screen and (min-width: 740px) { 
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
     #menuButton {
         display: none;
     }
 
-    #navigation {
-        display: flex;
-    }
-
-    #navigation ul {
-        display: flex;
+    .menu {
+        display: flex !important;
         flex-direction: row;
         justify-content: space-around;
-        margin: 5px 0;
+        padding: 0 20px;
     }
 
-    #navigation ul li {
-        padding: 10px 40px
+    .menu li {
+        font-size: 20px;
+        padding: 0 15px;
     }
 
     #soicalLinks {
-        display: block;
+        display: initial;
     }
 
 
 
+
+
+    /* Contact Styles */
+
+    #contactInfo {
+        flex-direction: row;
+    }
+
+    #contactInfo div:first-child {
+        border-bottom: none;
+        border-right: 3px solid black;
+        padding: 20px 0;
+    }
+
+    input {
+        width: 105%;
+    }
+
+    textarea {
+        width: 108%;
+        max-width: none;
+    }
 }

@@ -18,7 +18,7 @@ body {
     margin: 0;
 }
 
-header, nav, main, footer {
+/* header, nav, main, footer {
     width: 100%;
     min-width: 400px;
 }
@@ -67,7 +67,6 @@ header h1 {
 }
 
 
-/* Navigation Styles */
 #navigation {
     display: none;
     flex-direction: column;
@@ -101,6 +100,83 @@ header h1 {
 
 #navigation a.active {
     color: rgb(255, 208, 120);
+} */
+
+
+nav, main, footer {
+    width: 100%;
+    min-width: 450px;
+}
+
+nav {
+    display: block;
+    background-color: var(--gunmetal);
+    font-family: var(--heading-font-2);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+.logo img {
+    width: 100px;
+    background-color: var(--mint-cream);
+    border-radius: 50%;
+    padding: 10px;
+    margin: 25px 20px;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.menu li {
+    font-size: 22px;
+    padding: 10px 0;
+}
+
+.menu.open {
+    display: block;
+    text-align: center;
+}
+
+nav a:hover, .menu a.active {
+    color: #5CC6FF;
+}
+
+#menuButton {
+    position: absolute;
+    top: 120px;
+    right: 20px;
+    background-color: var(--gunmetal);
+    font-size: 25px;
+}
+
+#menuButton::before {
+    content: "☰";
+}
+
+#menuButton.open::before {
+    content: "❌";
+    font-size: 22px;
 }
 
 
@@ -188,7 +264,7 @@ thead th, tbody td {
 .reviewCard {
     width: 200px;
     min-width: 150px;
-    color: wheat;
+    color: #FFF6CC;
     background-color: var(--amaranth-purple);
     font-family: var(--heading-font-1);
     border-radius: 0 30px 0 30px;
@@ -318,4 +394,143 @@ footer div:nth-child(4) {
     font-family: var(--heading-font-1);
     font-size: 15px;
     margin: 0 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contact Page Styles */
+
+#contactMain {
+    display: grid;
+    grid-template-columns: auto 80% auto;
+    padding: 20px 0;
+}
+
+#contactMain * {
+    grid-column: 2/3;
+}
+
+#contactMain h2 {
+    font-family: var(--heading-font-1);
+    font-size: 25px;
+    text-align: left;
+    padding-bottom: 10px; 
+    border-bottom: 3px solid black;
+}
+
+#contactInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+
+#contactInfo div:first-child {
+    border-bottom: 3px solid black;
+    padding: 20px 20%;
+}
+
+#contactInfo div, #contactInfo div a {
+    width: 50%;
+    display: block;
+    text-align: center;
+    font-family: var(--paragraph-font-1);
+    font-size: 20px;
+}
+
+#contactInfo div a {
+    width: 100%;
+    color: blue;
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+#map {
+    width: 95%;
+    margin: 50px auto 0 auto;
+}
+
+iframe {
+    width: 100%;
+}
+
+form {
+    display: block;
+    font-family: var(--paragraph-font-1);
+    margin: 60px 5px 40px 5px
+}
+
+legend {
+    padding: 0 10px;
+    margin: 0 5px;
+    font-size: 18px;
+}
+
+fieldset {
+    border: 2px solid var(--cerulean);
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    width: 87%;
+    font-size: 15px;
+    line-height: 30px;
+    margin: 10px 0;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+input:required {
+    border-left: 7px solid red;
+}
+
+input:required:valid {
+    border-left: 7px solid green;
+}
+
+#comment {
+    margin-bottom: 0;
+}
+
+textarea {
+    width: 110%;
+    max-width: max-content;
+    max-height: 250px;
+    min-height: 150px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#submitBnt {
+    width: 200px;
+    font-size: 15px;
+    font-family: var(--heading-font-1);
+    text-align: center;
+    color: white;
+    background-color: rgb(81, 81, 81);
+    border: 2px solid black;
+    padding: 15px;
+    margin: 25px 0 ;
 }
