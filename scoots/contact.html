@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development - Scoot's Contact Page">
+    <meta name="author" content="Isaac Haws">
+    <meta property="og:title" content="Scoot's Contact Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://isaachaws.github.io/wdd230/scoots/images/couple_riding_scooters.webp">
+    <meta property="og:url" content="https://isaachaws.github.io/wdd230/index.html">
+    <title>Scoot's Contact Page</title>
+    <link rel="icon" href="scoots_favicon.ico">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="logo"> Scoot's Rentals</a>
+        </div>
+        <a href="#" id="menuButton"></a>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+    <main id="contactMain">
+        <h2>Contact Us</h2>
+        <section id="contactInfo">
+            <div>
+                <p id="name">Name: Isaac Haws</p>
+                <p id="myEmail">Email: haw22020@byui.edu</p>
+            </div>
+            <div>
+                <p>LinkedIn: <a id="linkedin" href="https://www.linkedin.com/in/isaachaws/">Isaac's Profile</a></p>
+                <p>MS Teams: <a id="teamChat" href="u135061544@byui.edu">Chat with Isaac</a></p>
+                
+            </div>
+        </section>
+        
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d140521.46998067113!2d-87.07932504296507!3d20.56103692315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1701964790007!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="map"></iframe>
+        </div>
+
+        <form method="get" action="record.html">
+            <fieldset>
+                <legend>Contact Info</legend>
+                <label id="name">Name* <input type="text" name="name" required></label>
+                <label id="email">Email* <input type="email" name="email" placeholder="someone23@gmail.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required></label>
+                <label id="comment">Comments* <textarea name="comments" id="commentBox" cols="60" rows="10" placeholder="Write Your Comment Here" required></textarea></label>
+            </fieldset>
+            <input type="submit" value="Submit My Information" id="submitBnt">
+        </form>
+    </main>
+
+    <footer>
+        <div>
+            <img src="images/logo.png" alt="logo" width="100px" height="100px">
+            <p>&copy; <span id="currentYear"></span> Isaac Haws</p>
+        </div>
+        
+        <div id="locations">
+            <h3>Locations</h3>
+            <ul>
+                <li><a href="https://www.google.com/maps/place/FERRY+TO+PLAYA+DEL+CARMEN/@20.5117836,-86.9503826,18.34z/data=!4m6!3m5!1s0x8f4e59cebd031b81:0x1d4d43952273f214!8m2!3d20.5114653!4d-86.9500893!16s%2Fg%2F11b72q30cp?entry=ttu" target="_blank">Playa del Carmen Ferry dock</a></li>
+                <li><a href="https://www.google.com/maps/place/Seaport+-+Puerta+Maya/@20.4759915,-86.9772149,18z/data=!3m1!4b1!4m6!3m5!1s0x8f4e574915f5accd:0xc8f310e1602b6808!8m2!3d20.475989!4d-86.9759274!16s%2Fg%2F1tqcm8f2?entry=ttu" target="_blank">Terminal Puerta Maya</a></li>
+            </ul>
+        </div>
+            
+        <div id="soicalLinks">
+            <h3>Soical Links</h3>
+            <ul>
+                <li><a href="#">Lorem Ipsum</a></li>
+                <li><a href="#">Lorem Ipsum</a></li>
+            </ul>
+        </div>
+        <div>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
