@@ -7,7 +7,8 @@ async function getWeatherData() {
             const data = await response.json();
             //console.log(data);
             displayCurrentWeather(data);
-            displayFutureWeather(data)
+            displayFutureWeather(data);
+            displayMaxTemperture(data);
         }   
         else {
             throw Error(await response.text());
@@ -48,15 +49,23 @@ const minTemp = document.querySelector("#minTemp");
 const humidity = document.querySelector("#humidity");
 
 function displayFutureWeather(data) {
-    const imgSrc = `https://openweathermap.org/img/w/${data.list[9].weather[0].icon}.png`;
-    const imgAlt = data.list[9].weather[0].description;
+    const imgSrc = `https://openweathermap.org/img/w/${data.list[7].weather[0].icon}.png`;
+    const imgAlt = data.list[7].weather[0].description;
     weatherImg.setAttribute("src", imgSrc);
     weatherImg.setAttribute("alt", imgAlt);
     description.innerHTML = imgAlt.charAt(0).toUpperCase() + imgAlt.slice(1);
 
-    maxTemp.innerHTML = `Max Temp: <br>${data.list[9].main.temp_max}&#8457;`;
-    minTemp.innerHTML = `Min Temp: <br>${data.list[9].main.temp_min}&#8457;`;
-    humidity.innerHTML = `Humidity: ${data.list[9].main.humidity}%`;
+    maxTemp.innerHTML = `Max Temp: <br>${data.list[7].main.temp_max}&#8457;`;
+    minTemp.innerHTML = `Min Temp: <br>${data.list[7].main.temp_min}&#8457;`;
+    humidity.innerHTML = `Humidity: ${data.list[7].main.humidity}%`;
+}
+
+
+const currentMaxTemp = document.querySelector(".maxTemp");
+
+function displayMaxTemperture(data) {
+    const tempMax = data.list[0].main.temp_max;
+    currentMaxTemp.innerHTML = `Maximum Temperature for Today: ${tempMax}&#8457;`;
 }
 
 getWeatherData();
