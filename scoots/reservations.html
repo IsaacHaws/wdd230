@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development - Scoot's Reservations Page">
+    <meta name="author" content="Isaac Haws">
+    <meta property="og:title" content="Scoot's Reservations Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://isaachaws.github.io/wdd230/scoots/images/couple_riding_scooters.webp">
+    <meta property="og:url" content="https://isaachaws.github.io/wdd230/scoots/reservations.html">
+    <title>Scoot's Reservations Page</title>
+    <link rel="icon" href="scoots_favicon.ico">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="logo"> Scoot's Rentals</a>
+        </div>
+        <a href="#" id="menuButton"></a>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html" class="active">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main id="reserveMain">
+        <section class="rentalAgreement">
+            <h2>Rental Agreement</h2>
+            <ul>
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid drivers license is required in hand at the time of rental.</li>
+                <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                <li>Fuel charge is not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is included.</li>
+                <li>Damage insurance is available for purchase.</li>
+                <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                <li>Rentals may be returned to either physical location.</li>
+            </ul>  
+        </section>
+
+        <section class="reserveForm">
+            <h2>Rental Request</h2>
+            <form method="get" action="record.html">
+                <fieldset class="rentalInfo">
+                    <legend>Rental Information</legend>
+                    <label>Rental Start Date*<input type="date" name="startDate" required></label>
+                    <label>Rental End Date*<input type="date" name="endDate" required></label>
+                    <label>Rental Type*
+                        <select name="rentals" required>
+                            <option value="">--Select--</option>
+                            <option value="Honda Metropolitan Scooter">Honda Metropolitan Scooter</option>
+                            <option value="Honda Dio Scooter">Honda Dio Scooter</option>
+                            <option value="Honda PCX150 Scooter">Honda PCX150 Scooter</option>
+                            <option value="Honda Pioneer 1000 ATV Scooter">Honda Pioneer 1000 ATV Scooter</option>
+                            <option value="Jeep Wrangler - 4 Door with A/C">Jeep Wrangler - 4 Door with A/C</option>
+                            <option value="Jeep Wrangler - 2 Door">Jeep Wrangler - 2 Door</option>
+                        </select>
+                    </label>
+                    <label>Pick-Up Location*
+                        <select name="rentalLocation" required>
+                            <option value="">--Select--</option>
+                            <option value="Playa del Carmen Ferry Dock">Playa del Carmen Ferry Dock</option>
+                            <option value="Terminal Puerta Maya">Terminal Puerta Maya</option>
+                        </select>
+                    </label>
+                    <label>Return Location*
+                        <select name="rentalLocation" required>
+                            <option value="">--Select--</option>
+                            <option value="Playa del Carmen Ferry Dock">Playa del Carmen Ferry Dock</option>
+                            <option value="Terminal Puerta Maya">Terminal Puerta Maya</option>
+                        </select>
+                    </label>
+                </fieldset>
+                
+                <fieldset class="renterInfo">
+                    <legend>Renter Information</legend>
+                    <label>Name*<input type="text" name="name" required></label>
+                    <label>Email*<input type="email" name="email" placeholder="someone23@gmail.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required></label>
+                    <label>Phone Number*<input type="tel" name="phoneNum" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-555-1234" required></label>
+                    <label>State or Country*<input type="text" name="place" required></label>
+                    <label>Cruise Line<input type="text" name="cruiseLine"></label>
+                </fieldset>
+
+                <fieldset class="comments">
+                    <legend>Special Accommodations/Comments</legend>
+                        <label>Comments<textarea placeholder="Write Your Comments Here"></textarea></label>
+                </fieldset>
+                <label id="agreeCheck">I Hereby agree to the Terms Above:<input type="checkbox" name="check" required></label>
+                <input type="submit" value="Submit My Request" id="submitBnt">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <img src="images/logo.png" alt="logo" width="100px" height="100px">
+            <p>&copy; <span id="currentYear"></span> Isaac Haws</p>
+        </div>
+        
+        <div id="locations">
+            <h3>Locations</h3>
+            <ul>
+                <li><a href="https://www.google.com/maps/place/FERRY+TO+PLAYA+DEL+CARMEN/@20.5117836,-86.9503826,18.34z/data=!4m6!3m5!1s0x8f4e59cebd031b81:0x1d4d43952273f214!8m2!3d20.5114653!4d-86.9500893!16s%2Fg%2F11b72q30cp?entry=ttu" target="_blank">Playa del Carmen Ferry Dock</a></li>
+                <li><a href="https://www.google.com/maps/place/Seaport+-+Puerta+Maya/@20.4759915,-86.9772149,18z/data=!3m1!4b1!4m6!3m5!1s0x8f4e574915f5accd:0xc8f310e1602b6808!8m2!3d20.475989!4d-86.9759274!16s%2Fg%2F1tqcm8f2?entry=ttu" target="_blank">Terminal Puerta Maya</a></li>
+            </ul>
+        </div>
+            
+        <div id="soicalLinks">
+            <h3>Soical Links</h3>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/isaachaws/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+        <div>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

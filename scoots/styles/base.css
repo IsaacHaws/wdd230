@@ -333,14 +333,73 @@ footer div:nth-child(4) {
 
 
 
+/* Reservation Page Styles */
 
+#reserveMain {
+    display: grid;
+    grid-template-columns: auto 70% auto;
+}
 
+.rentalAgreement {
+    grid-column: 1/4;
+    font-family: var(--paragraph-font-1);
+    font-size: 20px;
+    margin: 20px 35px;
+}
 
+.rentalAgreement h2, .reserveForm h2 {
+    font-size: 28px;
+    font-family: var(--paragraph-font-1);
+    text-align: left;
+    padding: 10px 0;
+    border-bottom: 2px solid black;
+    min-width: 380px;
+}
 
+.rentalAgreement ul li {
+    padding: 8px 0;
+}
 
+.reserveForm {
+    grid-column: 2/3;
+}
 
+.reserveForm form {
+    min-width: 380px;
+    margin: 0;
+}
 
+fieldset {
+    margin: 30px 0;
+}
 
+.comments {
+    margin-bottom: 8px;
+}
+
+select {
+    display: block;
+    width: 110%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.comments textarea {
+    max-width: none;
+    min-width: 350px;
+}
+
+#agreeCheck {
+    display: flex;
+    margin: 0;
+}
+
+#agreeCheck input {
+    width: 20px;
+    margin: 0 10px;
+}
 
 
 /* Contact Page Styles */
@@ -423,7 +482,7 @@ label {
     width: 87%;
     font-size: 15px;
     line-height: 30px;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 input {
@@ -435,11 +494,11 @@ input {
     border-radius: 10px;
 }
 
-input:required {
+input:required, select:required {
     border-left: 7px solid red;
 }
 
-input:required:valid {
+input:required:valid, select:required:valid {
     border-left: 7px solid green;
 }
 
