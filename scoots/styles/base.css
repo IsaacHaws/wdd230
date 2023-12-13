@@ -27,7 +27,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--mint-cream);
+    color: black;
     background-color: var(--atomic-tangerine);
     font-family: var(--heading-font-2);
     font-size: 20px;
@@ -344,7 +344,7 @@ footer div:nth-child(4) {
     grid-column: 1/4;
     font-family: var(--paragraph-font-1);
     font-size: 20px;
-    margin: 20px 35px;
+    margin: 20px 60px;
 }
 
 .rentalAgreement h2, .reserveForm h2 {
@@ -384,6 +384,18 @@ select {
     font-size: 1rem;
     border: 1px solid black;
     border-radius: 10px;
+}
+
+#price {
+    font-size: 20px;
+    font-family: var(--heading-font-1);
+    padding-left: 10px;
+    margin-bottom: 0;
+}
+
+#priceMsg {
+    font-size: 13px;
+    padding-left: 10px;
 }
 
 .comments textarea {
