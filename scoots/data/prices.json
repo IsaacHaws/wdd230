@@ -3,60 +3,60 @@
         {
             "name": "Honda Metropolitan Scooter",
             "type": "scooter",
-            "maximumLoad": 1,
+            "maximumLoad": "1",
             "prices": {
-                "resvervation": 5,
-                "walkIn": 10 
+                "resvervation": "5",
+                "walkIn": "10" 
             },
             "img": "images/Honda Metropolitan Scooter.webp"
         },
         {
             "name": "Honda Dio Scooter",
             "type": "scooter",
-            "maximumLoad": 2,
+            "maximumLoad": "2",
             "prices": {
-                "resvervation": 5,
-                "walkIn": 10 
+                "resvervation": "5",
+                "walkIn": "10" 
             },
             "img": "images/Honda Dio Scooter.webp"
         },
         {
             "name": "Honda PCX150 Scooter",
             "type": "scooter",
-            "maximumLoad": 2,
+            "maximumLoad": "2",
             "prices": {
-                "resvervation": 10,
-                "walkIn": 12 
+                "resvervation": "10",
+                "walkIn": "12" 
             },
             "img": "images/Honda PCX150 Scooter.webp"
         },
         {
             "name": "Honda Pioneer 1000 ATV",
             "type": "atv",
-            "maximumLoad": 4,
+            "maximumLoad": "4",
             "prices": {
-                "resvervation": 10,
-                "walkIn": 12 
+                "resvervation": "10",
+                "walkIn": "12" 
             },
             "img": "images/Honda Pioneer 1000.webp"
         },
         {
             "name": "Jeep Wrangler - 4 Door with A/C",
             "type": "jeep",
-            "maximumLoad": 5,
+            "maximumLoad": "5",
             "prices": {
-                "resvervation": 30,
-                "walkIn": 35 
+                "resvervation": "30",
+                "walkIn": "35" 
             },
             "img": "images/Jeep Wrangler- 4 door.webp"
         },
         {
             "name": "Jeep Wrangler - 2 Door",
             "type": "jeep",
-            "maximumLoad": 4,
+            "maximumLoad": "4",
             "prices": {
-                "resvervation": 20,
-                "walkIn": 25 
+                "resvervation": "20",
+                "walkIn": "25" 
             },
             "img": "images/Jeep Wrangler- 2 door.webp"
         }
