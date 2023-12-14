@@ -3,7 +3,7 @@ const pricesUrl = "https://isaachaws.github.io/wdd230/scoots/data/prices.json";
 async function getPriceData(url) {
     const response = await fetch(url);
     const data = await response.json();
-    console.log(data.rentals);
+    //console.log(data.rentals);
     displayScooters(data.rentals);
     displayAtvs(data.rentals);
     displayJeeps(data.rentals);
@@ -90,7 +90,7 @@ function displayAtvs(data) {
 }
     
 function displayJeeps(data) {
-    for (let i = 4; i <= 6; i++) {
+    for (let i = 4; i < 6; i++) {
         let rentalCard = document.createElement("div");
         rentalCard.className = "rentalCard"
 
