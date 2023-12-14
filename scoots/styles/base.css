@@ -332,6 +332,92 @@ footer div:nth-child(4) {
 
 
 
+/* Rentals Page Styles */
+
+#rentalMain {
+    font-family: var(--heading-font-1);
+}
+
+.header {
+    font-size: 22px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0
+}
+
+.header h2 {
+    margin: 0;
+}
+
+.type {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.type a {
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0 20px;
+    color: black;
+}
+
+.type a:hover, .type a.color {
+    color: blue;
+}
+
+.scooterCards, .atvCards, .jeepCards {
+    display: none;
+}
+
+.scooterCards.show, .atvCards.show, .jeepCards.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rentals {
+    margin: 0 20%;
+}
+
+.rentalCard {
+    width: 90%;
+    color: white;
+    background-color: var(--cerulean);
+    border-radius: 40px 40px ;
+    margin: 20px 0;
+    min-width: 330px;
+}
+
+.rentalCard img {
+    width: 100%;
+    height: auto;
+    border-radius: 40px 40px 0 0;
+}
+
+.cardInfo {
+    display: flex;
+    min-height: 100px;
+    font-size: 20px;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.cardBnt {
+    text-align: center;
+    background-color: var(--atomic-tangerine);
+    width: 50%;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.cardBnt a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    margin: 50px 0;
+}
+
 
 /* Reservation Page Styles */
 
@@ -412,6 +498,7 @@ select {
     width: 20px;
     margin: 0 10px;
 }
+
 
 
 /* Contact Page Styles */

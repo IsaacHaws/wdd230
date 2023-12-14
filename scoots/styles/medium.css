@@ -26,6 +26,28 @@
     }
 
 
+    /* Rental Page Styles */
+
+    .rentals {
+        margin: 0 30px
+    }
+
+    .scooterCards.show, .atvCards.show, .jeepCards.show {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .scooterCard
+
+    .rentalCard {
+        margin: 10px 20px;
+        max-width: 450px;
+    }
+
+
+
     /* Reservation Page Styles */
 
     .rentalAgreement {
