@@ -18,7 +18,7 @@
                 "resvervation": 5,
                 "walkIn": 10 
             },
-            "img": ""
+            "img": "images/Honda Dio Scooter.webp"
         },
         {
             "name": "Honda PCX150 Scooter",
@@ -28,7 +28,7 @@
                 "resvervation": 10,
                 "walkIn": 12 
             },
-            "img": ""
+            "img": "images/Honda PCX150 Scooter.webp"
         },
         {
             "name": "Honda Pioneer 1000 ATV",
@@ -38,7 +38,7 @@
                 "resvervation": 10,
                 "walkIn": 12 
             },
-            "img": ""
+            "img": "images/Honda Pioneer 1000.webp"
         },
         {
             "name": "Jeep Wrangler - 4 Door with A/C",
@@ -48,7 +48,7 @@
                 "resvervation": 30,
                 "walkIn": 35 
             },
-            "img": ""
+            "img": "images/Jeep Wrangler- 4 door.webp"
         },
         {
             "name": "Jeep Wrangler - 2 Door",
@@ -58,7 +58,7 @@
                 "resvervation": 20,
                 "walkIn": 25 
             },
-            "img": ""
+            "img": "images/Jeep Wrangler- 2 door.webp"
         }
     ]
 }
