@@ -626,3 +626,19 @@ textarea {
     padding: 15px;
     margin: 25px 0 ;
 }
+
+
+/* Form Confirmation Page Styles */
+
+.confirmMain {
+    text-align: center;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formConfirm {
+    font-family: var(--heading-font-1);
+    font-size: 20px;
+}
